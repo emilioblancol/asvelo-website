@@ -36,51 +36,6 @@
     revealEls.forEach(function (el) { el.classList.add('is-visible'); });
   }
 
-  /* ---------- Live demo widget ---------- */
-  var micBtn = document.getElementById('micBtn');
-  var volumeBars = document.getElementById('volumeBars');
-  var statusText = document.getElementById('demoStatusText');
-  var timerEl = document.getElementById('demoTimer');
-  var isPlaying = false;
-
-  if (micBtn) {
-    var demoInterval = null;
-    var demoSeconds = 0;
-
-    function formatTime(s) {
-      var m = Math.floor(s / 60);
-      var sec = s % 60;
-      return (m < 10 ? '0' + m : m) + ':' + (sec < 10 ? '0' + sec : sec);
-    }
-
-    function stopDemo() {
-      isPlaying = false;
-      clearInterval(demoInterval);
-      micBtn.classList.remove('is-active');
-      volumeBars.classList.remove('is-active');
-      statusText.textContent = t('demo.status.ready');
-      demoSeconds = 0;
-      timerEl.textContent = '00:00';
-    }
-
-    micBtn.addEventListener('click', function () {
-      if (isPlaying) { stopDemo(); return; }
-      isPlaying = true;
-      micBtn.classList.add('is-active');
-      volumeBars.classList.add('is-active');
-      statusText.textContent = t('demo.status.connecting');
-      setTimeout(function () {
-        if (!isPlaying) return;
-        statusText.textContent = t('demo.status.connected');
-      }, 900);
-      demoInterval = setInterval(function () {
-        demoSeconds++;
-        timerEl.textContent = formatTime(demoSeconds);
-        if (demoSeconds >= 18) stopDemo();
-      }, 1000);
-    });
-  }
-
   /* ---------- How We Work: timeline <-> panel sync ---------- */
   var howSteps = Array.prototype.slice.call(document.querySelectorAll('.how-step'));
   var howCounter = document.getElementById('howCounter');
@@ -112,39 +67,6 @@
   });
   if (howPrev) howPrev.addEventListener('click', function () { setHowStep((howActive - 1 + howSteps.length) % howSteps.length); });
   if (howNext) howNext.addEventListener('click', function () { setHowStep((howActive + 1) % howSteps.length); });
-
-  /* ---------- Coverage: search + filter ---------- */
-  var coverageSearch = document.getElementById('coverageSearch');
-  var filterPills = document.getElementById('filterPills');
-  var coverageItems = Array.prototype.slice.call(document.querySelectorAll('.coverage-item'));
-  var coverageEmpty = document.getElementById('coverageEmpty');
-  var activeFilter = 'all';
-
-  function applyCoverageFilter() {
-    var query = (coverageSearch && coverageSearch.value || '').trim().toLowerCase();
-    var visibleCount = 0;
-    coverageItems.forEach(function (item) {
-      var matchesFilter = activeFilter === 'all' || item.dataset.cat === activeFilter;
-      var titleText = item.querySelector('h4').textContent.toLowerCase();
-      var matchesSearch = !query || titleText.indexOf(query) !== -1;
-      var show = matchesFilter && matchesSearch;
-      item.classList.toggle('is-hidden', !show);
-      if (show) visibleCount++;
-    });
-    if (coverageEmpty) coverageEmpty.hidden = visibleCount !== 0;
-  }
-
-  if (coverageSearch) coverageSearch.addEventListener('input', applyCoverageFilter);
-  if (filterPills) {
-    filterPills.addEventListener('click', function (e) {
-      var btn = e.target.closest('.pill');
-      if (!btn) return;
-      filterPills.querySelectorAll('.pill').forEach(function (p) { p.classList.remove('is-active'); });
-      btn.classList.add('is-active');
-      activeFilter = btn.dataset.filter;
-      applyCoverageFilter();
-    });
-  }
 
   /* ---------- FAQ accordion ---------- */
   var accordion = document.getElementById('accordion');
@@ -305,7 +227,6 @@
   /* ---------- Re-render dynamic strings on language change ---------- */
   document.addEventListener('asvelo:langchange', function () {
     if (howSteps.length) renderHowPanel();
-    if (!isPlaying && statusText) statusText.textContent = t('demo.status.ready');
     renderDiagLabel();
     if (diagActive === 4) renderDiagReveal();
     if (diagActive === 8) renderDiagDone();

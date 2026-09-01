@@ -100,7 +100,7 @@ svg { display: block; }
 }
 
 /* Numerals */
-.stat-num, .stat-bar-num, .proof-num, .proof-card-num, .why-num, .price-now {
+.stat-num, .stat-bar-num, .why-num, .price-now {
   font-variant-numeric: tabular-nums;
 }
 
@@ -430,69 +430,6 @@ svg { display: block; }
 .stat-bar-line { color: var(--muted); font-size: 15px; max-width: 560px; line-height: 1.6; }
 
 /* ==========================================================================
-   LIVE DEMO
-   ========================================================================== */
-.demo { border-top: 1px solid var(--border-1); }
-.demo-inner { display: flex; flex-direction: column; align-items: center; text-align: center; }
-.demo-widget {
-  margin-top: 56px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-}
-.mic-btn {
-  position: relative;
-  width: 88px; height: 88px;
-  border-radius: 50%;
-  background: var(--accent);
-  color: #fff;
-  display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 16px 40px -12px var(--accent-glow);
-  transition: transform 0.25s ease;
-}
-.mic-btn:hover { transform: scale(1.04); }
-.mic-ring {
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  border: 1px solid var(--border-3);
-  opacity: 0;
-}
-.mic-btn.is-active .mic-ring { animation: mic-pulse 1.8s ease-out infinite; }
-.mic-btn.is-active .r2 { animation-delay: 0.5s; }
-@keyframes mic-pulse {
-  0% { transform: scale(1); opacity: 0.6; }
-  100% { transform: scale(1.9); opacity: 0; }
-}
-.volume-bars { display: flex; align-items: flex-end; gap: 4px; height: 28px; }
-.volume-bars span {
-  width: 3px;
-  height: 26px;
-  border-radius: 2px;
-  background: var(--border-3);
-  transform: scaleY(0.23);
-  transform-origin: bottom;
-  transition: background 0.3s ease;
-}
-.volume-bars.is-active span { background: var(--accent); animation: bar-bounce 0.9s ease-in-out infinite; }
-.volume-bars span:nth-child(1) { animation-delay: 0s; }
-.volume-bars span:nth-child(2) { animation-delay: 0.1s; }
-.volume-bars span:nth-child(3) { animation-delay: 0.2s; }
-.volume-bars span:nth-child(4) { animation-delay: 0.3s; }
-.volume-bars span:nth-child(5) { animation-delay: 0.15s; }
-.volume-bars span:nth-child(6) { animation-delay: 0.25s; }
-.volume-bars span:nth-child(7) { animation-delay: 0.05s; }
-.volume-bars span:nth-child(8) { animation-delay: 0.35s; }
-@keyframes bar-bounce {
-  0%, 100% { transform: scaleY(0.23); }
-  50% { transform: scaleY(1); }
-}
-.demo-status { display: flex; align-items: center; gap: 12px; font-size: 13px; color: var(--muted); }
-.demo-status #demoStatusText { text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; }
-.demo-timer { font-variant-numeric: tabular-nums; color: var(--white); }
-
-/* ==========================================================================
    WHY ASVELO
    ========================================================================== */
 .why-card { background: var(--black); padding: 40px 32px; transition: background 0.3s ease; position: relative; }
@@ -555,44 +492,6 @@ svg { display: block; }
   transition: border-color 0.2s ease, background 0.2s ease;
 }
 .how-panel-nav button:hover { border-color: var(--accent); background: var(--panel-solid); }
-
-/* ==========================================================================
-   COVERAGE
-   ========================================================================== */
-.coverage-head { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 32px; align-items: end; margin-bottom: 32px; }
-.coverage-search input {
-  width: 100%;
-  padding: 14px 18px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border-2);
-  background: var(--black);
-  color: var(--white);
-  font-size: 14px;
-}
-.coverage-search input::placeholder { color: var(--muted); }
-.coverage-search input:focus { border-color: var(--accent); }
-
-.filter-pills { display: flex; gap: 10px; margin-bottom: 32px; flex-wrap: wrap; }
-.pill {
-  padding: 9px 18px;
-  border-radius: 20px;
-  border: 1px solid var(--border-2);
-  font-size: 12.5px;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--muted);
-  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
-}
-.pill.is-active, .pill:hover { border-color: var(--accent); color: var(--accent); background: var(--panel-solid); }
-
-.coverage-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border-2); border: 1px solid var(--border-2); border-radius: var(--radius-md); overflow: hidden; }
-.coverage-item { background: var(--black); padding: 24px 20px; transition: background 0.2s ease; }
-.coverage-item:hover { background: var(--panel-solid); }
-.cov-tag { display: inline-block; font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin-bottom: 10px; }
-.coverage-item h4 { font-size: 14.5px; font-weight: 400; letter-spacing: -0.01em; line-height: 1.4; margin-bottom: 6px; }
-.cov-benefit { font-size: 12.5px; color: var(--muted); line-height: 1.5; }
-.coverage-item.is-hidden { display: none; }
-.coverage-empty { text-align: center; color: var(--muted); margin-top: 32px; font-size: 14px; }
 
 /* ==========================================================================
    FREE INSTALL
@@ -693,37 +592,6 @@ svg { display: block; }
 .ob-num { display: block; font-size: 13px; color: var(--accent); letter-spacing: 0.05em; margin-bottom: 12px; }
 .ob-step h4 { font-size: 22px; color: #fff; margin-bottom: 10px; letter-spacing: -0.02em; }
 .ob-step p { font-size: 15px; color: rgba(255,255,255,0.55); line-height: 1.7; max-width: 480px; }
-
-/* ==========================================================================
-   PROOF
-   ========================================================================== */
-.proof-bar {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  border: 1px solid var(--border-2);
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  margin-bottom: 24px;
-}
-.proof-cell {
-  padding: 28px 20px;
-  border-right: 1px solid var(--border-2);
-  background: var(--black);
-  display: flex; flex-direction: column; gap: 8px;
-}
-.proof-cell:last-child { border-right: none; }
-.proof-num { font-size: 30px; color: var(--accent); letter-spacing: -0.03em; }
-.proof-label { font-size: 11.5px; color: var(--muted); line-height: 1.5; }
-.proof-bar-source { font-size: 11.5px; color: var(--muted); opacity: 0.7; text-align: right; margin: -12px 0 24px; }
-
-.proof-card { background: var(--black); padding: 32px; }
-.proof-card-num { display: block; font-size: 36px; color: var(--accent); letter-spacing: -0.03em; margin-bottom: 12px; }
-.proof-card p { font-size: 14.5px; color: var(--muted); line-height: 1.65; margin-bottom: 14px; }
-.proof-source { font-size: 11.5px; color: var(--muted); opacity: 0.7; }
-.proof-flow h4 { font-size: 15px; margin-bottom: 20px; }
-.flow-diagram { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
-.flow-diagram span { font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--white); background: var(--panel-solid); border-radius: 6px; padding: 6px 10px; }
-.flow-diagram i { font-style: normal; color: var(--accent); font-size: 12px; }
 
 /* ==========================================================================
    FAQ
@@ -848,8 +716,6 @@ svg { display: block; }
 
   .hairline-grid.cols-3 { grid-template-columns: 1fr; }
   .hairline-grid.cols-2 { grid-template-columns: 1fr; }
-  .coverage-grid { grid-template-columns: repeat(2, 1fr); }
-  .coverage-head { grid-template-columns: 1fr; align-items: start; gap: 20px; }
 
   .how-grid { grid-template-columns: 1fr; }
   .how-timeline, .how-panel-wrap { position: static; }
@@ -858,10 +724,6 @@ svg { display: block; }
   .pc-grid { grid-template-columns: 1fr; }
   .onboarding-grid { grid-template-columns: 1fr; gap: 40px; }
   .onboarding-sticky { position: static; }
-
-  .proof-bar { grid-template-columns: repeat(3, 1fr); }
-  .proof-cell:nth-child(3n) { border-right: none; }
-  .proof-cell { border-bottom: 1px solid var(--border-2); }
 
   .faq-grid { grid-template-columns: 1fr; }
   .faq-aside { position: static; margin-top: 0; }
@@ -872,9 +734,6 @@ svg { display: block; }
   .hero-cta { flex-direction: column; }
   .hero-cta .btn { width: 100%; }
   .stat-bar { flex-direction: column; align-items: flex-start; gap: 8px; }
-  .coverage-grid { grid-template-columns: 1fr; }
-  .proof-bar { grid-template-columns: repeat(2, 1fr); }
-  .proof-cell:nth-child(2n) { border-right: none; }
   .install-inner, .pc-grid { gap: 32px; }
   .footer-bar { flex-direction: column; align-items: flex-start; }
 }

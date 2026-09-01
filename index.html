@@ -27,8 +27,6 @@
     <nav class="nav-links" id="navLinks">
       <a href="#problem" data-i18n="nav.problem">Problema</a>
       <a href="#how-we-work" data-i18n="nav.how">Cómo funciona</a>
-      <a href="#coverage" data-i18n="nav.coverage">Cobertura</a>
-      <a href="#proof" data-i18n="nav.proof">Resultados</a>
       <a href="#faq" data-i18n="nav.faq">Preguntas</a>
     </nav>
     <div class="lang-toggle" role="group" aria-label="Idioma / Language">
@@ -43,8 +41,6 @@
   <div class="nav-mobile" id="navMobile">
     <a href="#problem" data-i18n="nav.problem">Problema</a>
     <a href="#how-we-work" data-i18n="nav.how">Cómo funciona</a>
-    <a href="#coverage" data-i18n="nav.coverage">Cobertura</a>
-    <a href="#proof" data-i18n="nav.proof">Resultados</a>
     <a href="#faq" data-i18n="nav.faq">Preguntas</a>
     <div class="lang-toggle lang-toggle-mobile" role="group" aria-label="Idioma / Language">
       <button class="lang-btn is-active" data-lang="es">ES</button>
@@ -62,10 +58,9 @@
     <div class="hero-copy">
       <div class="eyebrow reveal"><span class="dot"></span><span data-i18n="hero.eyebrow">Reactivación de base de datos gratis</span></div>
       <h1 class="hero-title reveal" style="--d:1" data-i18n-html="hero.title">Consigue más ventas<br>sin conseguir <span class="accent">más leads</span>.</h1>
-      <p class="hero-sub reveal" style="--d:2" data-i18n="hero.sub">Asvelo convierte los leads y clientes que ya tienes en tu CRM en citas agendadas — seguimiento instantáneo, reactivación y retención que funcionan solos, para que ningún contacto se enfríe.</p>
+      <p class="hero-sub reveal" style="--d:2" data-i18n="hero.sub">Asvelo convierte los leads y clientes que ya tienes en tu CRM en citas agendadas — sin comprar un solo lead nuevo.</p>
       <div class="hero-cta reveal" style="--d:3">
         <a href="#cta" class="btn btn-primary" data-i18n="hero.cta.primary">Empezar reactivación gratis</a>
-        <a href="#how-we-work" class="btn btn-outline" data-i18n="hero.cta.secondary">Ver cómo funciona</a>
       </div>
       <div class="hero-stats reveal" style="--d:4">
         <div class="stat"><span class="stat-num">$0</span><span class="stat-label" data-i18n="hero.stat1.label">Costo para empezar</span></div>
@@ -149,30 +144,6 @@
   </div>
 </section>
 
-<!-- ============ LIVE DEMO ============ -->
-<section class="section-pad demo" id="demo">
-  <div class="container demo-inner">
-    <div class="eyebrow center reveal"><span class="dot"></span><span data-i18n="demo.eyebrow">Pruébalo</span></div>
-    <h2 class="h-lg center reveal" data-i18n="demo.title">Escucha a Asvelo dar seguimiento en tiempo real.</h2>
-    <p class="muted-lead center reveal" data-i18n="demo.sub">Este es el mismo agente de voz con IA que regresa la llamada a tus leads en menos de cinco minutos. Toca para escuchar una llamada de muestra.</p>
-
-    <div class="demo-widget reveal" id="demoWidget">
-      <button class="mic-btn" id="micBtn" data-i18n-aria-label="aria.playSample" aria-label="Reproducir llamada de muestra">
-        <span class="mic-ring r1"></span>
-        <span class="mic-ring r2"></span>
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Z" stroke="currentColor" stroke-width="1.6"/><path d="M19 11a7 7 0 0 1-14 0M12 18v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-      </button>
-      <div class="volume-bars" id="volumeBars">
-        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-      </div>
-      <div class="demo-status">
-        <span id="demoStatusText" data-i18n="demo.status.ready">Listo para llamar</span>
-        <span class="demo-timer" id="demoTimer">00:00</span>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ============ WHY ASVELO ============ -->
 <section class="section-pad why" id="why">
   <div class="container">
@@ -189,7 +160,7 @@
       <div class="why-card">
         <span class="why-num">02</span>
         <h3 data-i18n="why2.title">Cobertura de todo el ciclo</h3>
-        <p data-i18n="why2.body">Desde el primer contacto hasta la reactivación, cada etapa del recorrido del cliente tiene una acción definida — nadie se queda sin seguimiento.</p>
+        <p data-i18n="why2.body">Del primer mensaje al lead nuevo hasta la reactivación dos años después — seguimiento instantáneo, recuperación de llamadas perdidas e inasistencias, reactivación de contactos inactivos, y solicitudes de reseña y referido. Cada etapa tiene una acción definida — nadie se queda sin seguimiento.</p>
       </div>
       <div class="why-card">
         <span class="why-num">03</span>
@@ -254,48 +225,6 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ============ COVERAGE ============ -->
-<section class="section-pad band-off coverage" id="coverage">
-  <div class="band-grid" aria-hidden="true"></div>
-  <div class="container">
-    <div class="coverage-head reveal">
-      <div>
-        <div class="eyebrow"><span class="dot"></span><span data-i18n="coverage.eyebrow">Cobertura</span></div>
-        <h2 class="h-lg" data-i18n="coverage.title">Cada etapa cubierta.</h2>
-        <p class="muted-lead" data-i18n="coverage.sub">Un solo sistema para todo el ciclo de vida del cliente — busca o filtra para ver qué incluye.</p>
-      </div>
-      <div class="coverage-search">
-        <label class="sr-only" for="coverageSearch" data-i18n="coverage.search">Buscar qué incluye…</label>
-        <input type="text" id="coverageSearch" data-i18n-placeholder="coverage.search" placeholder="Buscar qué incluye…">
-      </div>
-    </div>
-
-    <div class="filter-pills reveal" id="filterPills">
-      <button class="pill is-active" data-filter="all" data-i18n="coverage.filter.all">Todo</button>
-      <button class="pill" data-filter="follow-up" data-i18n="coverage.filter.followup">Seguimiento</button>
-      <button class="pill" data-filter="recovery" data-i18n="coverage.filter.recovery">Recuperación</button>
-      <button class="pill" data-filter="retention" data-i18n="coverage.filter.retention">Retención</button>
-      <button class="pill" data-filter="reporting" data-i18n="coverage.filter.reporting">Reportes</button>
-    </div>
-
-    <div class="coverage-grid" id="coverageGrid">
-      <div class="coverage-item" data-cat="follow-up"><span class="cov-tag" data-i18n="coverage.filter.followup">Seguimiento</span><h4 data-i18n="coverage.item1">Seguimiento instantáneo a leads nuevos</h4><p class="cov-benefit" data-i18n="coverage.item1.benefit">Para que nadie se enfríe antes de hablar contigo</p></div>
-      <div class="coverage-item" data-cat="follow-up"><span class="cov-tag" data-i18n="coverage.filter.followup">Seguimiento</span><h4 data-i18n="coverage.item2">Nutrición de leads en varios pasos</h4><p class="cov-benefit" data-i18n="coverage.item2.benefit">Para mantener el interés hasta que estén listos</p></div>
-      <div class="coverage-item" data-cat="recovery"><span class="cov-tag" data-i18n="coverage.filter.recovery">Recuperación</span><h4 data-i18n="coverage.item3">Respuesta por SMS a llamadas perdidas</h4><p class="cov-benefit" data-i18n="coverage.item3.benefit">Para no perder la cita solo por no contestar</p></div>
-      <div class="coverage-item" data-cat="follow-up"><span class="cov-tag" data-i18n="coverage.filter.followup">Seguimiento</span><h4 data-i18n="coverage.item4">Confirmaciones y recordatorios de citas</h4><p class="cov-benefit" data-i18n="coverage.item4.benefit">Para reducir las inasistencias</p></div>
-      <div class="coverage-item" data-cat="recovery"><span class="cov-tag" data-i18n="coverage.filter.recovery">Recuperación</span><h4 data-i18n="coverage.item5">Recuperación de inasistencias y cancelaciones</h4><p class="cov-benefit" data-i18n="coverage.item5.benefit">Para recuperar el espacio que dejaron libre</p></div>
-      <div class="coverage-item" data-cat="recovery"><span class="cov-tag" data-i18n="coverage.filter.recovery">Recuperación</span><h4 data-i18n="coverage.item6">Seguimiento a oportunidades perdidas</h4><p class="cov-benefit" data-i18n="coverage.item6.benefit">Para que un "no por ahora" no sea un "no" para siempre</p></div>
-      <div class="coverage-item" data-cat="recovery"><span class="cov-tag" data-i18n="coverage.filter.recovery">Recuperación</span><h4 data-i18n="coverage.item7">Reactivación de leads inactivos</h4><p class="cov-benefit" data-i18n="coverage.item7.benefit">Para cobrar el interés que ya pagaste por conseguir</p></div>
-      <div class="coverage-item" data-cat="retention"><span class="cov-tag" data-i18n="coverage.filter.retention">Retención</span><h4 data-i18n="coverage.item8">Recuperación de clientes anteriores</h4><p class="cov-benefit" data-i18n="coverage.item8.benefit">Para traer de vuelta a quien ya te compró</p></div>
-      <div class="coverage-item" data-cat="retention"><span class="cov-tag" data-i18n="coverage.filter.retention">Retención</span><h4 data-i18n="coverage.item9">Recordatorios de recompra</h4><p class="cov-benefit" data-i18n="coverage.item9.benefit">Para que vuelvan antes de buscar a alguien más</p></div>
-      <div class="coverage-item" data-cat="retention"><span class="cov-tag" data-i18n="coverage.filter.retention">Retención</span><h4 data-i18n="coverage.item10">Campañas de reseñas y referidos</h4><p class="cov-benefit" data-i18n="coverage.item10.benefit">Para convertir clientes contentos en más clientes</p></div>
-      <div class="coverage-item" data-cat="reporting"><span class="cov-tag" data-i18n="coverage.filter.reporting">Reportes</span><h4 data-i18n="coverage.item11">Automatización de pipeline y enrutamiento de leads</h4><p class="cov-benefit" data-i18n="coverage.item11.benefit">Para que cada lead llegue a la persona correcta</p></div>
-      <div class="coverage-item" data-cat="reporting"><span class="cov-tag" data-i18n="coverage.filter.reporting">Reportes</span><h4 data-i18n="coverage.item12">Reportes, atribución y optimización</h4><p class="cov-benefit" data-i18n="coverage.item12.benefit">Para saber qué está funcionando de verdad</p></div>
-    </div>
-    <p class="coverage-empty" id="coverageEmpty" data-i18n="coverage.empty" hidden>Nada coincide con esa búsqueda — prueba con otra palabra.</p>
   </div>
 </section>
 
@@ -421,49 +350,6 @@
   </div>
 </section>
 
-<!-- ============ PROOF ============ -->
-<section class="section-pad band-off proof" id="proof">
-  <div class="band-grid" aria-hidden="true"></div>
-  <div class="container">
-    <div class="intro-block reveal">
-      <div class="eyebrow"><span class="dot"></span><span data-i18n="proof.eyebrow">Resultados</span></div>
-      <h2 class="h-lg" data-i18n="proof.title">Por qué la velocidad y el seguimiento mueven el número.</h2>
-    </div>
-
-    <!-- NOTE: figures below are widely-cited industry benchmarks, not Asvelo client results
-         (Asvelo is pre-launch — see docs/research/mexico/06-decision-and-next-steps.md).
-         Verify/replace exact sources before this goes live. -->
-    <div class="proof-bar reveal">
-      <div class="proof-cell"><span class="proof-num">5x</span><span class="proof-label" data-i18n="proof.cell1">Más barato venderle a un cliente actual que adquirir uno nuevo</span></div>
-      <div class="proof-cell"><span class="proof-num">78%</span><span class="proof-label" data-i18n="proof.cell2">De los compradores elige al primer negocio que responde</span></div>
-      <div class="proof-cell"><span class="proof-num">&lt;5min</span><span class="proof-label" data-i18n="proof.cell3">Ventana de respuesta antes de que la conversión caiga fuerte</span></div>
-      <div class="proof-cell"><span class="proof-num">62%</span><span class="proof-label" data-i18n="proof.cell4">De las llamadas entrantes a pequeños negocios no se contestan</span></div>
-      <div class="proof-cell"><span class="proof-num">24/7</span><span class="proof-label" data-i18n="proof.cell5">Cobertura necesaria — los leads no solo llegan en horario laboral</span></div>
-      <div class="proof-cell"><span class="proof-num">0</span><span class="proof-label" data-i18n="proof.cell6">Inversión publicitaria nueva requerida para actuar sobre esto</span></div>
-    </div>
-    <p class="proof-bar-source" data-i18n="proof.source">— Fuente: verificar antes de publicar</p>
-
-    <div class="hairline-grid cols-3 reveal">
-      <div class="proof-card">
-        <span class="proof-card-num">5x</span>
-        <p data-i18n="proof.card1.body">Retorno típico citado para programas de retención y reactivación frente a adquisición de clientes nuevos.</p>
-        <span class="proof-source" data-i18n="proof.source">— Fuente: verificar antes de publicar</span>
-      </div>
-      <div class="proof-card proof-flow">
-        <h4 data-i18n="proof.flow.title">Un sistema, cada etapa</h4>
-        <div class="flow-diagram">
-          <span data-i18n="proof.flow.s1">Lead nuevo</span><i>→</i><span data-i18n="proof.flow.s2">Seguimiento instantáneo</span><i>→</i><span data-i18n="proof.flow.s3">Agendado</span><i>→</i><span data-i18n="proof.flow.s4">Recuperación de inasistencia</span><i>→</i><span data-i18n="proof.flow.s5">Reactivación</span>
-        </div>
-      </div>
-      <div class="proof-card">
-        <span class="proof-card-num">62%</span>
-        <p data-i18n="proof.card3.body">De las llamadas perdidas en negocios de servicio pequeños y medianos nunca se regresan.</p>
-        <span class="proof-source" data-i18n="proof.source">— Fuente: verificar antes de publicar</span>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ============ FAQ ============ -->
 <section class="section-pad band-off faq" id="faq">
   <div class="band-grid" aria-hidden="true"></div>
@@ -506,8 +392,8 @@
 
     <aside class="faq-aside panel reveal">
       <h3 data-i18n="faq.aside.title">¿Aún tienes dudas?</h3>
-      <p data-i18n="faq.aside.body">Agenda una llamada de 15 minutos y revisamos juntos tu CRM y flujo de leads — sin venta, solo un vistazo a lo que se está fugando.</p>
-      <a href="#top" class="btn btn-outline btn-block" data-i18n="faq.aside.cta">Agendar llamada</a>
+      <p data-i18n="faq.aside.body">La forma más rápida de resolverlas: corre tu reactivación gratis y mira los resultados sobre tus propios contactos — sin compromiso.</p>
+      <a href="#cta" class="btn btn-primary btn-block" data-i18n="faq.aside.cta">Empezar reactivación gratis</a>
     </aside>
   </div>
 </section>
