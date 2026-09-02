@@ -7,13 +7,15 @@
 <meta name="description" content="Asvelo convierte los leads y clientes que ya tienes en tu CRM en citas agendadas — seguimiento, reactivación y retención que funcionan solos.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 0L12.5 7.5L20 10L12.5 12.5L10 20L7.5 12.5L0 10L7.5 7.5L10 0Z' fill='%231b4fd8'/%3E%3C/svg%3E">
-<meta name="theme-color" content="#ffffff">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 0L12.5 7.5L20 10L12.5 12.5L10 20L7.5 12.5L0 10L7.5 7.5L10 0Z' fill='%233355E0'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#FFFFFF">
 <link rel="stylesheet" href="css/styles.css">
 <noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
 </head>
 <body>
+
+<a class="skip-link" href="#main" data-i18n="aria.skipToContent">Saltar al contenido</a>
 
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
@@ -25,473 +27,135 @@
       <span translate="no">Asvelo</span>
     </a>
     <nav class="nav-links" id="navLinks">
-      <a href="#problem" data-i18n="nav.problem">Problema</a>
-      <a href="#how-we-work" data-i18n="nav.how">Cómo funciona</a>
-      <a href="#faq" data-i18n="nav.faq">Preguntas</a>
+      <a href="#features" data-i18n="nav.features">Qué incluye</a>
     </nav>
     <div class="lang-toggle" role="group" aria-label="Idioma / Language">
-      <button class="lang-btn is-active" data-lang="es">ES</button>
-      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn is-active" data-lang="es" aria-pressed="true">ES</button>
+      <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
     </div>
-    <a href="#cta" class="btn btn-primary btn-sm nav-cta" data-i18n="nav.cta">Empezar reactivación gratis</a>
+    <a href="reactivar.html" class="btn btn-primary btn-sm nav-cta" data-i18n="nav.cta">Reactivar mi base gratis</a>
     <button class="nav-burger" id="navBurger" data-i18n-aria-label="aria.toggleMenu" aria-label="Abrir menú" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
   <div class="nav-mobile" id="navMobile">
-    <a href="#problem" data-i18n="nav.problem">Problema</a>
-    <a href="#how-we-work" data-i18n="nav.how">Cómo funciona</a>
-    <a href="#faq" data-i18n="nav.faq">Preguntas</a>
+    <a href="#features" data-i18n="nav.features">Qué incluye</a>
     <div class="lang-toggle lang-toggle-mobile" role="group" aria-label="Idioma / Language">
-      <button class="lang-btn is-active" data-lang="es">ES</button>
-      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn is-active" data-lang="es" aria-pressed="true">ES</button>
+      <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
     </div>
-    <a href="#cta" class="btn btn-primary btn-block" data-i18n="nav.cta">Empezar reactivación gratis</a>
+    <a href="reactivar.html" class="btn btn-primary btn-block" data-i18n="nav.cta">Reactivar mi base gratis</a>
   </div>
 </header>
 
+<main id="main">
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
-  <div class="hero-grid" aria-hidden="true"></div>
-  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-glow hero-glow-deep" aria-hidden="true"></div>
+  <div class="hero-glow hero-glow-bright" aria-hidden="true"></div>
   <div class="container hero-inner">
-    <div class="hero-copy">
-      <div class="eyebrow reveal"><span class="dot"></span><span data-i18n="hero.eyebrow">Reactivación de base de datos gratis</span></div>
-      <h1 class="hero-title reveal" style="--d:1" data-i18n-html="hero.title">Consigue más ventas<br>sin conseguir <span class="accent">más leads</span>.</h1>
-      <p class="hero-sub reveal" style="--d:2" data-i18n="hero.sub">Asvelo convierte los leads y clientes que ya tienes en tu CRM en citas agendadas — sin comprar un solo lead nuevo.</p>
-      <div class="hero-cta reveal" style="--d:3">
-        <a href="#cta" class="btn btn-primary" data-i18n="hero.cta.primary">Empezar reactivación gratis</a>
-      </div>
-      <div class="hero-stats reveal" style="--d:4">
-        <div class="stat"><span class="stat-num">$0</span><span class="stat-label" data-i18n="hero.stat1.label">Costo para empezar</span></div>
-        <div class="stat"><span class="stat-num">&lt;5min</span><span class="stat-label" data-i18n="hero.stat2.label">Tiempo de respuesta</span></div>
-        <div class="stat"><span class="stat-num">24/7</span><span class="stat-label" data-i18n="hero.stat3.label">Cobertura de seguimiento</span></div>
-      </div>
+    <div class="eyebrow center reveal"><span class="dot"></span><span data-i18n="hero.eyebrow">Reactivación de base de datos gratis</span></div>
+    <h1 class="hero-title reveal" style="--d:1" data-i18n-html="hero.title">Gana más con cada cliente,<br>sin gastar más en <span class="accent">conseguir nuevos</span>.</h1>
+    <p class="hero-sub reveal" style="--d:2" data-i18n="hero.sub">Asvelo opera los seguimientos que hacen que más leads compren, más clientes regresen y más clientes satisfechos te recomienden.</p>
+    <div class="hero-cta reveal" style="--d:3">
+      <a href="reactivar.html" class="btn btn-primary btn-lg" data-i18n="hero.cta.primary">Reactivar mi base gratis</a>
     </div>
-
-    <div class="hero-form-wrap reveal" style="--d:2">
-      <div class="hero-form-panel panel">
-        <div class="speed-lines" aria-hidden="true">
-          <span></span><span></span><span></span><span></span><span></span>
-        </div>
-        <div class="form-head">
-          <span class="eyebrow small"><span class="dot"></span><span data-i18n="hero.form.eyebrow">Gratis — sin tarjeta</span></span>
-          <h3 data-i18n="hero.form.title">Reactivar mi base de datos</h3>
-          <p data-i18n="hero.form.sub">Ejecutamos una campaña real sobre tus leads y clientes inactivos, sin costo.</p>
-        </div>
-        <form class="lead-form" id="heroForm">
-          <div class="field">
-            <label class="sr-only" for="heroName" data-i18n="form.name">Nombre completo</label>
-            <input type="text" id="heroName" name="fullName" autocomplete="name" data-i18n-placeholder="form.name" placeholder="Nombre completo" required>
-          </div>
-          <div class="field">
-            <label class="sr-only" for="heroBusiness" data-i18n="form.business">Nombre del negocio</label>
-            <input type="text" id="heroBusiness" name="businessName" autocomplete="organization" data-i18n-placeholder="form.business" placeholder="Nombre del negocio" required>
-          </div>
-          <div class="field">
-            <label class="sr-only" for="heroPhone" data-i18n="form.phone">Teléfono o correo</label>
-            <input type="text" id="heroPhone" name="phoneOrEmail" autocomplete="tel" data-i18n-placeholder="form.phone" placeholder="Teléfono o correo" required>
-          </div>
-          <button type="submit" class="btn btn-primary btn-block btn-submit">
-            <span data-i18n="hero.form.submit">Reactivar mi base — gratis</span>
-            <svg class="arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-          <p class="form-privacy" data-i18n="form.privacy">Sin spam — solo tus resultados.</p>
-        </form>
-      </div>
+    <p class="hero-microcopy reveal" style="--d:3" data-i18n="hero.microcopy">Descubre cuánto ingreso ya tienes por recuperar.</p>
+    <div class="signature-line reveal" style="--d:4" aria-hidden="true">
+      <svg viewBox="0 0 400 48" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,24 L18,38 L34,14 L52,42 L70,18 L88,36 L104,22 L122,34 Q150,40 180,26 C230,6 300,10 400,4" />
+      </svg>
     </div>
   </div>
 </section>
 
-<!-- ============ MARQUEE ============ -->
-<div class="marquee">
-  <div class="marquee-track" id="marqueeTrack" aria-hidden="true"></div>
-</div>
-
-<!-- ============ PROBLEM ============ -->
-<section class="section-pad band-off problem" id="problem">
-  <div class="band-grid" aria-hidden="true"></div>
+<!-- ============ FEATURES ============ -->
+<section class="section-pad" id="features">
   <div class="container">
-    <div class="intro-block reveal">
-      <div class="eyebrow"><span class="dot"></span><span data-i18n="problem.eyebrow">La fuga</span></div>
-      <h2 class="h-lg" data-i18n="problem.title">Tu base de datos ya está llena de compradores.</h2>
-      <p class="muted-lead" data-i18n="problem.sub">Cada llamada perdida, lead sin cerrar y cita no asistida es dinero que ya pagaste por conseguir — y se fuga por atrás de tu embudo mientras sigues gastando en anuncios nuevos para reemplazarlo.</p>
+    <div class="eyebrow center reveal"><span class="dot"></span><span data-i18n="features.eyebrow">El sistema</span></div>
+
+    <div class="feature-block reveal">
+      <div class="feature-block-text">
+        <span class="feature-num" aria-hidden="true">01</span>
+        <h2 class="h-lg center" data-i18n="feature1.title">Trae de vuelta a tus clientes</h2>
+        <p class="muted-lead center" data-i18n="feature1.body">Le escribimos a tus clientes de hace 3, 6 o 12 meses en el momento justo de su ciclo de recompra — para que vuelvan sin que tengas que acordarte tú de contactarlos.</p>
+        <a href="reactivar.html" class="btn btn-primary" data-i18n="hero.cta.primary">Reactivar mi base gratis</a>
+      </div>
+      <div class="feature-media" aria-hidden="true"><span data-i18n="features.imagePlaceholder">Captura de pantalla próximamente</span></div>
     </div>
 
-    <div class="hairline-grid cols-3 reveal">
-      <div class="loss-card">
-        <span class="stamp" data-i18n="problem.card1.stamp">Llamadas perdidas</span>
-        <p data-i18n="problem.card1.body">Una gran parte de las llamadas entrantes a negocios de servicio quedan sin contestar en horario laboral — y la mayoría de quienes llaman nunca vuelven a intentarlo.</p>
-        <div class="loss-callout" data-i18n="problem.card1.loss">→ Se pierde: citas agendadas</div>
+    <div class="feature-block reveal">
+      <div class="feature-block-text">
+        <span class="feature-num" aria-hidden="true">02</span>
+        <h2 class="h-lg center" data-i18n="feature2.title">Reactiva tu base cada trimestre</h2>
+        <p class="muted-lead center" data-i18n="feature2.body">Cada trimestre le escribimos a tus contactos inactivos — pero primero segmentamos tu base, así cada quien recibe el mensaje que le aplica. Nada de mandar el mismo blast de WhatsApp Business a toda tu lista de un jalón.</p>
+        <a href="reactivar.html" class="btn btn-primary" data-i18n="hero.cta.primary">Reactivar mi base gratis</a>
       </div>
-      <div class="loss-card">
-        <span class="stamp" data-i18n="problem.card2.stamp">Leads fríos</span>
-        <p data-i18n="problem.card2.body">Los leads que no se contactan en los primeros minutos convierten a una fracción de la tasa de un seguimiento instantáneo.</p>
-        <div class="loss-callout" data-i18n="problem.card2.loss">→ Se pierde: pipeline</div>
-      </div>
-      <div class="loss-card">
-        <span class="stamp" data-i18n="problem.card3.stamp">Clientes inactivos</span>
-        <p data-i18n="problem.card3.body">Los clientes anteriores que podrían volver a agendar, subir de plan o referir siguen sin contactarse dentro del CRM.</p>
-        <div class="loss-callout" data-i18n="problem.card3.loss">→ Se pierde: ingresos recurrentes</div>
-      </div>
+      <div class="feature-media" aria-hidden="true"><span data-i18n="features.imagePlaceholder">Captura de pantalla próximamente</span></div>
     </div>
 
-    <div class="stat-bar panel reveal">
-      <span class="stat-bar-num">3–5x</span>
-      <span class="stat-bar-sep">—</span>
-      <span class="stat-bar-line" data-i18n="problem.statbar.line">más ingresos suelen ser recuperables desde una base de datos existente que desde inversión publicitaria nueva, antes de gastar un solo peso adicional.</span>
-    </div>
-  </div>
-</section>
-
-<!-- ============ WHY ASVELO ============ -->
-<section class="section-pad why" id="why">
-  <div class="container">
-    <div class="intro-block reveal">
-      <div class="eyebrow"><span class="dot"></span><span data-i18n="why.eyebrow">Por qué Asvelo</span></div>
-      <h2 class="h-lg" data-i18n="why.title">Diseñado para cerrar la fuga, no para sumarse a ella.</h2>
-    </div>
-    <div class="hairline-grid cols-2 reveal">
-      <div class="why-card">
-        <span class="why-num">01</span>
-        <h3 data-i18n="why1.title">Velocidad de respuesta</h3>
-        <p data-i18n="why1.body">Cada lead nuevo recibe una llamada, mensaje o correo instantáneo — la mayoría en minutos, de día o de noche, antes de que llame a tu competencia.</p>
+    <div class="feature-block reveal">
+      <div class="feature-block-text">
+        <span class="feature-num" aria-hidden="true">03</span>
+        <h2 class="h-lg center" data-i18n="feature3.title">Recupera oportunidades</h2>
+        <p class="muted-lead center" data-i18n="feature3.body">Llamadas perdidas, leads sin responder y cotizaciones abiertas reciben seguimiento automático — para que ninguna se enfríe antes de convertirse en cita o venta.</p>
+        <a href="reactivar.html" class="btn btn-primary" data-i18n="hero.cta.primary">Reactivar mi base gratis</a>
       </div>
-      <div class="why-card">
-        <span class="why-num">02</span>
-        <h3 data-i18n="why2.title">Cobertura de todo el ciclo</h3>
-        <p data-i18n="why2.body">Del primer mensaje al lead nuevo hasta la reactivación dos años después — seguimiento instantáneo, recuperación de llamadas perdidas e inasistencias, reactivación de contactos inactivos, y solicitudes de reseña y referido. Cada etapa tiene una acción definida — nadie se queda sin seguimiento.</p>
-      </div>
-      <div class="why-card">
-        <span class="why-num">03</span>
-        <h3 data-i18n="why3.title">Funciona dentro de tu CRM</h3>
-        <p data-i18n="why3.body">Asvelo se conecta al CRM que ya usas. Sin migraciones ni sistemas nuevos que tu equipo tenga que aprender.</p>
-      </div>
-      <div class="why-card">
-        <span class="why-num">04</span>
-        <h3 data-i18n="why4.title">Comprobado antes de pagar</h3>
-        <p data-i18n="why4.body">Ejecutamos tu primera campaña de reactivación gratis, para que veas ingresos recuperados antes de comprometerte a algo.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ HOW WE WORK ============ -->
-<section class="section-pad band-off how" id="how-we-work">
-  <div class="band-grid" aria-hidden="true"></div>
-  <div class="container">
-    <div class="intro-block reveal">
-      <div class="eyebrow"><span class="dot"></span><span data-i18n="how.eyebrow">Cómo trabajamos</span></div>
-      <h2 class="h-lg" data-i18n="how.title">De diagnóstico a sistema activo, en cinco pasos.</h2>
+      <div class="feature-media" aria-hidden="true"><span data-i18n="features.imagePlaceholder">Captura de pantalla próximamente</span></div>
     </div>
 
-    <div class="how-grid">
-      <div class="how-timeline reveal" id="howTimeline">
-        <div class="how-step is-active" data-step="0">
-          <div class="how-pill-top" data-i18n="how.step1.tag">Paso 01</div>
-          <div class="how-pill-bottom"><span class="how-dot"></span><div><h4 data-i18n="how.step1.title">Diagnóstico</h4><p data-i18n="how.step1.body">Auditamos tu CRM y flujo de leads para encontrar exactamente dónde se fuga el ingreso.</p></div></div>
-        </div>
-        <div class="how-step" data-step="1">
-          <div class="how-pill-top" data-i18n="how.step2.tag">Paso 02</div>
-          <div class="how-pill-bottom"><span class="how-dot"></span><div><h4 data-i18n="how.step2.title">Reactivación gratuita</h4><p data-i18n="how.step2.body">Ejecutamos una campaña real sobre tus contactos inactivos — sin costo, sin compromiso.</p></div></div>
-        </div>
-        <div class="how-step" data-step="2">
-          <div class="how-pill-top" data-i18n="how.step3.tag">Paso 03</div>
-          <div class="how-pill-bottom"><span class="how-dot"></span><div><h4 data-i18n="how.step3.title">Revisión de resultados</h4><p data-i18n="how.step3.body">Ves las respuestas, conversaciones y citas agendadas que se recuperaron.</p></div></div>
-        </div>
-        <div class="how-step" data-step="3">
-          <div class="how-pill-top" data-i18n="how.step4.tag">Paso 04</div>
-          <div class="how-pill-bottom"><span class="how-dot"></span><div><h4 data-i18n="how.step4.title">Instalación del sistema</h4><p data-i18n="how.step4.body">Instalamos seguimiento de todo el ciclo: leads nuevos, inasistencias, reactivación y retención.</p></div></div>
-        </div>
-        <div class="how-step" data-step="4">
-          <div class="how-pill-top" data-i18n="how.step5.tag">Paso 05</div>
-          <div class="how-pill-bottom"><span class="how-dot"></span><div><h4 data-i18n="how.step5.title">Optimización mensual</h4><p data-i18n="how.step5.body">Monitoreamos, reportamos y ajustamos mensajes y enrutamiento cada mes.</p></div></div>
-        </div>
+    <div class="feature-block reveal">
+      <div class="feature-block-text">
+        <span class="feature-num" aria-hidden="true">04</span>
+        <h2 class="h-lg center" data-i18n="feature4.title">Protege tu agenda</h2>
+        <p class="muted-lead center" data-i18n="feature4.body">Confirmaciones, recordatorios y reprogramación en un clic reducen las cancelaciones y los espacios vacíos — y si aun así no se presentan, recuperamos la cita.</p>
+        <a href="reactivar.html" class="btn btn-primary" data-i18n="hero.cta.primary">Reactivar mi base gratis</a>
       </div>
+      <div class="feature-media" aria-hidden="true"><span data-i18n="features.imagePlaceholder">Captura de pantalla próximamente</span></div>
+    </div>
 
-      <div class="how-panel-wrap reveal">
-        <div class="how-panel panel">
-          <div class="how-panel-top">
-            <span class="pulse-dot"></span>
-            <span class="how-panel-counter" id="howCounter">Paso 01 / 05</span>
-          </div>
-          <h4 class="how-panel-headline" id="howHeadline">Diagnóstico</h4>
-          <div class="how-panel-divider"></div>
-          <ul class="how-log" id="howLog"></ul>
-          <div class="how-panel-nav">
-            <button id="howPrev" data-i18n-aria-label="aria.prevStep" aria-label="Paso anterior">←</button>
-            <button id="howNext" data-i18n-aria-label="aria.nextStep" aria-label="Paso siguiente">→</button>
-          </div>
-        </div>
+    <div class="feature-block reveal">
+      <div class="feature-block-text">
+        <span class="feature-num" aria-hidden="true">05</span>
+        <h2 class="h-lg center" data-i18n="feature5.title">Nada importante se queda sin responder</h2>
+        <p class="muted-lead center" data-i18n="feature5.body">Si una respuesta valiosa no recibe atención de tu equipo a tiempo, se escala automáticamente — para que ninguna oportunidad se pierda por descuido.</p>
+        <a href="reactivar.html" class="btn btn-primary" data-i18n="hero.cta.primary">Reactivar mi base gratis</a>
       </div>
+      <div class="feature-media" aria-hidden="true"><span data-i18n="features.imagePlaceholder">Captura de pantalla próximamente</span></div>
+    </div>
+
+    <div class="feature-block reveal">
+      <div class="feature-block-text">
+        <span class="feature-num" aria-hidden="true">06</span>
+        <h2 class="h-lg center" data-i18n="feature6.title">Genera reseñas automáticamente</h2>
+        <p class="muted-lead center" data-i18n="feature6.body">Cada compra o cita exitosa dispara una solicitud de reseña — para construir la prueba social que te ayuda a cerrar al siguiente cliente.</p>
+        <a href="reactivar.html" class="btn btn-primary" data-i18n="hero.cta.primary">Reactivar mi base gratis</a>
+      </div>
+      <div class="feature-media" aria-hidden="true"><span data-i18n="features.imagePlaceholder">Captura de pantalla próximamente</span></div>
+    </div>
+
+    <div class="feature-block reveal">
+      <div class="feature-block-text">
+        <span class="feature-num" aria-hidden="true">07</span>
+        <h2 class="h-lg center" data-i18n="feature7.title">Convierte clientes contentos en clientes nuevos</h2>
+        <p class="muted-lead center" data-i18n="feature7.body">En cuanto confirmamos que un cliente quedó satisfecho, le pedimos que te refiera — la forma más barata de conseguir un cliente nuevo.</p>
+        <a href="reactivar.html" class="btn btn-primary" data-i18n="hero.cta.primary">Reactivar mi base gratis</a>
+      </div>
+      <div class="feature-media" aria-hidden="true"><span data-i18n="features.imagePlaceholder">Captura de pantalla próximamente</span></div>
+    </div>
+
+    <div class="feature-block reveal">
+      <div class="feature-block-text">
+        <span class="feature-num" aria-hidden="true">08</span>
+        <h2 class="h-lg center" data-i18n="feature8.title">Ve el ingreso que se recupera</h2>
+        <p class="muted-lead center" data-i18n="feature8.body">Cada mes y trimestre ves las citas, el ingreso y el pipeline recuperado por cada parte del sistema — para que el retorno sea visible, no una promesa.</p>
+        <a href="reactivar.html" class="btn btn-primary" data-i18n="hero.cta.primary">Reactivar mi base gratis</a>
+      </div>
+      <div class="feature-media" aria-hidden="true"><span data-i18n="features.imagePlaceholder">Captura de pantalla próximamente</span></div>
     </div>
   </div>
 </section>
-
-<!-- ============ FREE INSTALL ============ -->
-<section class="section-pad install" id="cta">
-  <div class="container install-inner">
-    <div class="install-copy reveal">
-      <div class="slot-row">
-        <span class="slot-tag" data-i18n="install.slot1">[ LUGARES ESTE MES ]</span>
-        <span class="slot-tag slot-count" data-i18n="install.slot2">06 / 10 OCUPADOS</span>
-      </div>
-      <h2 class="h-xl" data-i18n-html="install.title">Tu primera campaña es <span class="accent">gratis</span>.</h2>
-      <p class="muted-lead" data-i18n="install.sub">Ejecutamos una campaña real de reactivación sobre tus leads y clientes inactivos antes de que pagues nada. Solo avanzas si encuentra ingresos.</p>
-
-      <div class="qualify-box">
-        <p class="qualify-title" data-i18n="install.qualify.title">Puedes calificar si:</p>
-        <ul class="dash-list">
-          <li data-i18n="install.qualify.li1">Ya tienes 500+ leads o clientes en un CRM</li>
-          <li data-i18n="install.qualify.li2">Tienes un negocio basado en citas, cotizaciones o recompra</li>
-          <li data-i18n="install.qualify.li3">Has notado que leads o clientes anteriores se enfrían</li>
-          <li data-i18n="install.qualify.li4">Tus contactos tienen datos de contacto válidos y consentimiento para recibir mensajes</li>
-          <li data-i18n="install.qualify.li5">Alguien de tu equipo puede dar seguimiento cuando un contacto responda</li>
-        </ul>
-        <p class="qualify-disclaimer" data-i18n="install.qualify.disclaimer">La disponibilidad es limitada a pocos negocios al mes para que cada campaña reciba atención real — no una plantilla.</p>
-      </div>
-
-      <a href="#top" class="btn btn-primary btn-lg" data-i18n="install.cta">Reclama tu reactivación gratis</a>
-    </div>
-
-    <div class="install-card panel reveal">
-      <div class="install-item">
-        <span class="install-icon">01</span>
-        <div><h4 data-i18n="install.item1.title">Campaña completa</h4><p data-i18n="install.item1.body">Construimos y lanzamos una secuencia de reactivación por SMS, correo o voz — adaptada a tu base de datos.</p></div>
-      </div>
-      <div class="install-item">
-        <span class="install-icon">02</span>
-        <div><h4 data-i18n="install.item2.title">Resultados reales, no una demo</h4><p data-i18n="install.item2.body">Corre sobre tus contactos inactivos reales, así que lo que ves es justo lo que podrías recuperar.</p></div>
-      </div>
-      <div class="install-item">
-        <span class="install-icon">03</span>
-        <div><h4 data-i18n="install.item3.title">Sin obligación</h4><p data-i18n="install.item3.body">Te quedas con los resultados de cualquier forma — no hay contrato para completar la campaña gratuita.</p></div>
-      </div>
-      <div class="install-footer">
-        <div class="price-row">
-          <span class="price-was" data-i18n="install.priceWas">Instalación MXN 3,000</span>
-          <span class="price-now" data-i18n="install.priceNow">Gratis</span>
-        </div>
-        <div class="progress-bar"><span style="width:60%"></span></div>
-        <span class="progress-label" data-i18n="install.progressLabel">6 de 10 lugares ocupados este mes</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PERSONALIZATION + COMPLIANCE ============ -->
-<section class="section-pad band-off pc" id="pc">
-  <div class="band-grid" aria-hidden="true"></div>
-  <div class="container">
-    <div class="pc-grid">
-      <div class="pc-panel reveal">
-        <span class="eyebrow"><span class="dot"></span><span data-i18n="pc.p1.eyebrow">Personalización</span></span>
-        <h3 data-i18n="pc.p1.title">Cada mensaje suena como tú.</h3>
-        <p class="pc-sub" data-i18n="pc.p1.sub">No es un script de bot genérico.</p>
-        <div class="pc-tiles">
-          <div class="pc-tile"><h5 data-i18n="pc.tile1.title">Voz de marca</h5><p data-i18n="pc.tile1.body">El tono y los guiones se escriben para sonar como tu negocio, no como una plantilla.</p></div>
-          <div class="pc-tile"><h5 data-i18n="pc.tile2.title">Con base en el historial</h5><p data-i18n="pc.tile2.body">Los mensajes reflejan lo que un contacto ya agendó, compró o preguntó.</p></div>
-          <div class="pc-tile"><h5 data-i18n="pc.tile3.title">Canal correcto por contacto</h5><p data-i18n="pc.tile3.body">SMS, WhatsApp, correo o voz — según lo que cada contacto responde mejor.</p></div>
-          <div class="pc-tile"><h5 data-i18n="pc.tile4.title">Traspaso a un humano</h5><p data-i18n="pc.tile4.body">Las conversaciones listas para cerrar se enrutan directo a tu equipo.</p></div>
-        </div>
-        <div class="pc-footnote" data-i18n="pc.p1.footnote">El tono y los guiones se revisan contigo antes de publicarse.</div>
-      </div>
-
-      <div class="pc-panel reveal">
-        <span class="eyebrow"><span class="dot"></span><span data-i18n="pc.p2.eyebrow">Cumplimiento</span></span>
-        <h3 data-i18n="pc.p2.title">Diseñado para mantenerte del lado correcto de las reglas.</h3>
-        <p class="pc-sub" data-i18n="pc.p2.sub">Consentimiento y baja de mensajes manejados por defecto.</p>
-        <div class="pc-checklist">
-          <div class="pc-check-row"><span class="pc-check-icon">✓</span><div><h5 data-i18n="pc.check1.title">Baja respetada al instante</h5><p data-i18n="pc.check1.body">Cada respuesta se monitorea para que una solicitud de baja se respete de inmediato, en cualquier canal.</p></div></div>
-          <div class="pc-check-row"><span class="pc-check-icon">✓</span><div><h5 data-i18n="pc.check2.title">Contacto con consentimiento previo</h5><p data-i18n="pc.check2.body">Las campañas de reactivación se ejecutan sobre contactos que ya aceptaron recibir mensajes tuyos.</p></div></div>
-          <div class="pc-check-row"><span class="pc-check-icon">✓</span><div><h5 data-i18n="pc.check3.title">Registro completo de mensajes</h5><p data-i18n="pc.check3.body">Cada envío, respuesta y resultado queda registrado y disponible para revisión.</p></div></div>
-        </div>
-        <div class="pc-footnote" data-i18n="pc.p2.footnote">Los requisitos varían por canal y región — lo configuramos según el tuyo.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ ONBOARDING ============ -->
-<section class="section-pad onboarding" id="onboarding">
-  <div class="container onboarding-grid">
-    <div class="onboarding-sticky">
-      <div class="eyebrow"><span class="dot"></span><span data-i18n="onboarding.eyebrow">Implementación</span></div>
-      <h2 class="h-lg" data-i18n="onboarding.title">Operando en días, no meses.</h2>
-      <p class="muted-lead" data-i18n="onboarding.sub">Sin migraciones ni implementaciones largas. Esto es lo que pasa en realidad después de que dices que sí.</p>
-    </div>
-    <div class="onboarding-steps">
-      <div class="ob-step reveal">
-        <span class="ob-num">01</span>
-        <h4 data-i18n="ob1.title">Conectar</h4>
-        <p data-i18n="ob1.body">Vincula el CRM que ya usas, o importa tu base de datos — sin necesidad de migrar.</p>
-      </div>
-      <div class="ob-step reveal">
-        <span class="ob-num">02</span>
-        <h4 data-i18n="ob2.title">Configurar</h4>
-        <p data-i18n="ob2.body">Mapeamos las etapas de tu ciclo y definimos la cadencia, canales y tono de los mensajes.</p>
-      </div>
-      <div class="ob-step reveal">
-        <span class="ob-num">03</span>
-        <h4 data-i18n="ob3.title">Lanzar</h4>
-        <p data-i18n="ob3.body">El seguimiento instantáneo y tus primeras campañas de reactivación entran en operación.</p>
-      </div>
-      <div class="ob-step reveal">
-        <span class="ob-num">04</span>
-        <h4 data-i18n="ob4.title">Revisar</h4>
-        <p data-i18n="ob4.body">Recibes un recorrido de lo que está corriendo y dónde ver los resultados.</p>
-      </div>
-      <div class="ob-step reveal">
-        <span class="ob-num">05</span>
-        <h4 data-i18n="ob5.title">Optimizar</h4>
-        <p data-i18n="ob5.body">Ajustamos mensajes, tiempos y enrutamiento cada mes según las respuestas reales.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FAQ ============ -->
-<section class="section-pad band-off faq" id="faq">
-  <div class="band-grid" aria-hidden="true"></div>
-  <div class="container faq-grid">
-    <div class="faq-list reveal">
-      <div class="eyebrow"><span class="dot"></span><span data-i18n="faq.eyebrow">Preguntas frecuentes</span></div>
-      <h2 class="h-lg" data-i18n="faq.title">Preguntas, respondidas.</h2>
-
-      <div class="accordion" id="accordion">
-        <div class="acc-item">
-          <button class="acc-head"><span data-i18n="faq.q1">¿Necesito cambiar de CRM?</span><span class="acc-icon">+</span></button>
-          <div class="acc-body"><p data-i18n="faq.a1">No. Asvelo se conecta al CRM que ya usas. Si no tienes uno, podemos configurarte uno sencillo.</p></div>
-        </div>
-        <div class="acc-item">
-          <button class="acc-head"><span data-i18n="faq.q2">¿Qué me cuesta en realidad la reactivación gratuita?</span><span class="acc-icon">+</span></button>
-          <div class="acc-body"><p data-i18n="faq.a2">Nada por adelantado. Es posible que cubras costos de mensajería o API en volúmenes altos, y solo pasas a un plan pagado si los resultados valen la pena.</p></div>
-        </div>
-        <div class="acc-item">
-          <button class="acc-head"><span data-i18n="faq.q3">¿Qué tan rápido se contacta a los leads nuevos?</span><span class="acc-icon">+</span></button>
-          <div class="acc-body"><p data-i18n="faq.a3">La mayoría recibe una llamada, mensaje o correo instantáneo — normalmente en minutos, a cualquier hora del día.</p></div>
-        </div>
-        <div class="acc-item">
-          <button class="acc-head"><span data-i18n="faq.q4">¿Esto reemplaza a mi equipo de ventas?</span><span class="acc-icon">+</span></button>
-          <div class="acc-body"><p data-i18n="faq.a4">No — se asegura de que cada lead y cliente tenga una acción de seguimiento, para que tu equipo dedique tiempo a las conversaciones listas para cerrar en lugar de perseguir contactos fríos.</p></div>
-        </div>
-        <div class="acc-item">
-          <button class="acc-head"><span data-i18n="faq.q5">¿En qué se diferencia de un chatbot o una agencia de IA?</span><span class="acc-icon">+</span></button>
-          <div class="acc-body"><p data-i18n="faq.a5">No te vendemos software ni automatizaciones. Instalamos y operamos un sistema completo de ingresos por cliente y respondemos por el resultado — más citas agendadas e ingresos recuperados.</p></div>
-        </div>
-        <div class="acc-item">
-          <button class="acc-head"><span data-i18n="faq.q6">¿Qué pasa si mi base de datos es pequeña?</span><span class="acc-icon">+</span></button>
-          <div class="acc-body"><p data-i18n="faq.a6">Trabajamos mejor con negocios que ya tienen volumen real de leads o clientes — algunos cientos de contactos o más. Si estás por debajo, te lo diremos con honestidad.</p></div>
-        </div>
-        <div class="acc-item">
-          <button class="acc-head"><span data-i18n="faq.q7">¿Mis datos de clientes están seguros?</span><span class="acc-icon">+</span></button>
-          <div class="acc-body"><p data-i18n="faq.a7">Sí. Los datos se quedan dentro de tu CRM y solo se usan para operar tus campañas — nunca se venden ni se comparten.</p></div>
-        </div>
-      </div>
-    </div>
-
-    <aside class="faq-aside panel reveal">
-      <h3 data-i18n="faq.aside.title">¿Aún tienes dudas?</h3>
-      <p data-i18n="faq.aside.body">La forma más rápida de resolverlas: corre tu reactivación gratis y mira los resultados sobre tus propios contactos — sin compromiso.</p>
-      <a href="#cta" class="btn btn-primary btn-block" data-i18n="faq.aside.cta">Empezar reactivación gratis</a>
-    </aside>
-  </div>
-</section>
-
-<!-- ============ DIAGNOSTIC / FINAL CTA ============ -->
-<section class="section-pad diagnostic" id="diagnostic">
-  <div class="container diag-container">
-    <div class="diag-progress-row">
-      <div class="diag-progress-bar"><span id="diagProgressFill" style="width:12.5%"></span></div>
-      <span class="diag-step-label" id="diagStepLabel">Pregunta 1 de 8</span>
-    </div>
-
-    <div class="diag-card" id="diagCard">
-      <div class="diag-step is-active" data-step="0">
-        <h3 class="diag-q" data-i18n="diag.q0">¿Tienes un CRM o una lista de leads/clientes?</h3>
-        <div class="diag-options">
-          <button class="diag-opt" data-next data-field="crm" data-i18n="diag.q0.opt1">Sí, uso un CRM (GoHighLevel, HubSpot, etc.)</button>
-          <button class="diag-opt" data-next data-field="crm" data-flag="loose" data-i18n="diag.q0.opt2">Tengo una lista, pero no es un CRM formal (Excel, WhatsApp, papel)</button>
-          <button class="diag-opt" data-next data-field="crm" data-flag="nocrm" data-i18n="diag.q0.opt3">No, no tengo nada organizado todavía</button>
-        </div>
-      </div>
-      <div class="diag-step" data-step="1">
-        <h3 class="diag-q" data-i18n="diag.q1">¿Cuántos leads o clientes tienes en total?</h3>
-        <div class="diag-options">
-          <button class="diag-opt" data-next data-field="volume" data-val="150" data-flag="belowfloor" data-i18n="diag.q1.opt1">Menos de 300</button>
-          <button class="diag-opt" data-next data-field="volume" data-val="300" data-i18n="diag.q1.opt2">300 – 500</button>
-          <button class="diag-opt" data-next data-field="volume" data-val="500" data-i18n="diag.q1.opt3">500 – 2,000</button>
-          <button class="diag-opt" data-next data-field="volume" data-val="2000" data-i18n="diag.q1.opt4">2,000+</button>
-        </div>
-      </div>
-      <div class="diag-step" data-step="2">
-        <h3 class="diag-q" data-i18n="diag.q2">¿De dónde vienen esos contactos?</h3>
-        <div class="diag-options">
-          <button class="diag-opt" data-next data-field="source" data-i18n="diag.q2.opt1">Clientes anteriores o leads reales, de los últimos 2 años</button>
-          <button class="diag-opt" data-next data-field="source" data-flag="stale" data-i18n="diag.q2.opt2">Clientes o leads reales, pero más antiguos</button>
-          <button class="diag-opt" data-next data-field="source" data-flag="disqualify" data-i18n="diag.q2.opt3">Lista comprada o descargada</button>
-          <button class="diag-opt" data-next data-field="source" data-flag="unsure" data-i18n="diag.q2.opt4">No estoy seguro</button>
-        </div>
-      </div>
-      <div class="diag-step" data-step="3">
-        <h3 class="diag-q" data-i18n="diag.q3">¿Cuál es tu ticket promedio, o el valor de un cliente recurrente?</h3>
-        <div class="diag-options">
-          <button class="diag-opt" data-next data-field="ticket" data-val="1000" data-flag="lowticket" data-i18n="diag.q3.opt1">Menos de MXN 2,000</button>
-          <button class="diag-opt" data-next data-field="ticket" data-val="2000" data-i18n="diag.q3.opt2">MXN 2,000 – 5,000</button>
-          <button class="diag-opt" data-next data-field="ticket" data-val="5000" data-i18n="diag.q3.opt3">MXN 5,000+</button>
-          <button class="diag-opt" data-next data-field="ticket" data-val="2000" data-i18n="diag.q3.opt4">Ticket bajo, pero compran seguido (alto LTV)</button>
-        </div>
-      </div>
-      <div class="diag-step diag-reveal" data-step="4">
-        <span class="eyebrow small"><span class="dot"></span><span data-i18n="diag.reveal.eyebrow">Tu estimado</span></span>
-        <h3 class="diag-q" id="diagRevealHeadline" data-i18n="diag.reveal.qualified.headline">Podrías tener esto en ingresos recuperables:</h3>
-        <div class="diag-reveal-number" id="diagRevealNumber">MXN $30,000<span>/mes</span></div>
-        <p class="diag-reveal-note" id="diagRevealNote" data-i18n="diag.reveal.qualified.note">Estimado conservador — contactos × 3% de conversión × ticket promedio. El mismo cálculo que usamos para calificar pilotos gratuitos.</p>
-        <button type="button" class="btn btn-primary" data-next data-i18n="diag.reveal.cta">Continuar</button>
-      </div>
-      <div class="diag-step" data-step="5">
-        <h3 class="diag-q" data-i18n="diag.q4">Si recuperamos 10–15 citas o ventas en las próximas dos semanas, ¿tienes capacidad para atenderlas?</h3>
-        <div class="diag-options">
-          <button class="diag-opt" data-next data-field="capacity" data-i18n="diag.q4.opt1">Sí, sin problema</button>
-          <button class="diag-opt" data-next data-field="capacity" data-flag="conditional" data-i18n="diag.q4.opt2">Sí, con algunos ajustes</button>
-          <button class="diag-opt" data-next data-field="capacity" data-flag="fail" data-i18n="diag.q4.opt3">No, estamos saturados ahora mismo</button>
-        </div>
-      </div>
-      <div class="diag-step" data-step="6">
-        <h3 class="diag-q" data-i18n="diag.q5">¿Alguien puede responder a un contacto interesado en menos de 10 minutos?</h3>
-        <div class="diag-options">
-          <button class="diag-opt" data-next data-field="response" data-i18n="diag.q5.opt1">Sí, siempre</button>
-          <button class="diag-opt" data-next data-field="response" data-flag="conditional" data-i18n="diag.q5.opt2">A veces</button>
-          <button class="diag-opt" data-next data-field="response" data-flag="fail" data-i18n="diag.q5.opt3">No, tardamos más</button>
-        </div>
-      </div>
-      <div class="diag-step" data-step="7">
-        <h3 class="diag-q" data-i18n="diag.q6">¿A dónde enviamos tus resultados?</h3>
-        <form class="diag-form" id="diagForm">
-          <div class="field">
-            <label class="sr-only" for="diagName" data-i18n="form.name">Nombre completo</label>
-            <input type="text" id="diagName" name="fullName" autocomplete="name" data-i18n-placeholder="form.name" placeholder="Nombre completo" required>
-          </div>
-          <div class="field">
-            <label class="sr-only" for="diagBusiness" data-i18n="form.business">Nombre del negocio</label>
-            <input type="text" id="diagBusiness" name="businessName" autocomplete="organization" data-i18n-placeholder="form.business" placeholder="Nombre del negocio" required>
-          </div>
-          <div class="field">
-            <label class="sr-only" for="diagPhone" data-i18n="form.phone">Teléfono o correo</label>
-            <input type="text" id="diagPhone" name="phoneOrEmail" autocomplete="tel" data-i18n-placeholder="form.phone" placeholder="Teléfono o correo" required>
-          </div>
-          <button type="submit" class="btn btn-primary btn-block" data-i18n="diag.submit">Ver si califico</button>
-          <p class="form-privacy" data-i18n="form.privacy">Sin spam — solo tus resultados.</p>
-        </form>
-      </div>
-      <div class="diag-step diag-done" data-step="8">
-        <h3 class="diag-q" id="diagDoneTitle" data-i18n="diag.persona.prequalified.title">Diagnóstico: tu negocio parece un candidato fuerte.</h3>
-        <p class="muted-lead" id="diagDoneBody" data-i18n="diag.persona.prequalified.body">El siguiente paso es validar la calidad y cantidad real de los contactos antes de confirmar la reactivación gratuita. Te contactamos dentro de un día hábil.</p>
-        <a href="#top" class="btn btn-primary" id="diagDoneCta" data-i18n="diag.persona.prequalified.cta">Agendar mi validación</a>
-      </div>
-    </div>
-  </div>
-</section>
+</main>
 
 <!-- ============ FOOTER ============ -->
 <footer class="footer">
