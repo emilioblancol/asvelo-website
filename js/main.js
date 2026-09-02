@@ -1,22 +1,6 @@
 (function () {
   'use strict';
 
-  /* ---------- Mobile nav ---------- */
-  var burger = document.getElementById('navBurger');
-  var navMobile = document.getElementById('navMobile');
-  if (burger && navMobile) {
-    burger.addEventListener('click', function () {
-      var isOpen = navMobile.classList.toggle('is-open');
-      burger.setAttribute('aria-expanded', isOpen);
-    });
-    navMobile.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () {
-        navMobile.classList.remove('is-open');
-        burger.setAttribute('aria-expanded', 'false');
-      });
-    });
-  }
-
   /* ---------- Lang toggle: aria-pressed sync ---------- */
   document.addEventListener('asvelo:langchange', function (e) {
     document.querySelectorAll('.lang-btn').forEach(function (btn) {

@@ -35,7 +35,7 @@
       'footer.copy': '© 2026 Asvelo. Todos los derechos reservados.',
       'footer.privacy': 'Privacidad', 'footer.terms': 'Términos', 'footer.contact': 'Contacto',
 
-      'aria.toggleMenu': 'Abrir menú', 'aria.skipToContent': 'Saltar al contenido', 'aria.diagBack': 'Pregunta anterior',
+      'aria.skipToContent': 'Saltar al contenido', 'aria.diagBack': 'Pregunta anterior',
 
       'nav.backHome': 'Volver al inicio',
 
@@ -188,7 +188,7 @@
       'footer.copy': '© 2026 Asvelo. All rights reserved.',
       'footer.privacy': 'Privacy', 'footer.terms': 'Terms', 'footer.contact': 'Contact',
 
-      'aria.toggleMenu': 'Toggle menu', 'aria.skipToContent': 'Skip to content', 'aria.diagBack': 'Previous question',
+      'aria.skipToContent': 'Skip to content', 'aria.diagBack': 'Previous question',
 
       'nav.backHome': 'Back to home',
 
