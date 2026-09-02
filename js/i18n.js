@@ -5,13 +5,15 @@
 
   var dict = {
     es: {
-      'nav.features': 'Qué incluye', 'nav.cta': 'Reactivar mi base gratis',
+      'nav.features': 'Qué incluye', 'nav.cta': 'Ver si mi base califica',
 
       'hero.eyebrow': 'Reactivación de base de datos gratis',
-      'hero.title': 'Gana más con cada cliente,<br>sin gastar más en <span class="accent">conseguir nuevos</span>.',
-      'hero.sub': 'Asvelo opera los seguimientos que hacen que más leads compren, más clientes regresen y más clientes satisfechos te recomienden.',
-      'hero.cta.primary': 'Reactivar mi base gratis',
-      'hero.microcopy': 'Descubre cuánto ingreso ya tienes por recuperar.',
+      'hero.title': 'Gana <span class="accent">más con cada cliente</span>,<br>sin gastar más en<br>conseguir nuevos.',
+      'hero.sub': 'Asvelo opera los seguimientos para convertir más leads, traer clientes de vuelta y generar reseñas y referidos.',
+      'hero.cta.primary': 'Ver si mi base califica',
+      'hero.microcopy': 'Reactivación gratuita para negocios con 300+ contactos.',
+
+      'trustStrip.body': 'Segmentamos tu base de datos - lanzamos la campaña - reportamos las oportunidades recuperadas',
 
       'features.eyebrow': 'El sistema', 'features.imagePlaceholder': 'Captura de pantalla próximamente',
       'feature1.title': 'Trae de vuelta a tus clientes',
@@ -158,13 +160,15 @@
     },
 
     en: {
-      'nav.features': "What’s Included", 'nav.cta': 'Reactivate My Database — Free',
+      'nav.features': "What’s Included", 'nav.cta': 'See If My Database Qualifies',
 
       'hero.eyebrow': 'Free database reactivation',
-      'hero.title': 'Earn more from every customer,<br>without spending more to <span class="accent">get new ones</span>.',
-      'hero.sub': 'Asvelo runs the follow-ups that get more leads to buy, more customers to come back, and more happy customers to refer you.',
-      'hero.cta.primary': 'Reactivate My Database — Free',
-      'hero.microcopy': 'Find out how much revenue you already have to recover.',
+      'hero.title': 'Earn <span class="accent">more from every customer</span>,<br>without spending more<br>to get new ones.',
+      'hero.sub': 'Asvelo runs the follow-ups that convert more leads, bring back customers, and generate reviews and referrals.',
+      'hero.cta.primary': 'See If My Database Qualifies',
+      'hero.microcopy': 'Free reactivation for businesses with 300+ contacts.',
+
+      'trustStrip.body': 'We segment your database - launch the campaign - report the opportunities recovered',
 
       'features.eyebrow': 'The system', 'features.imagePlaceholder': 'Screenshot coming soon',
       'feature1.title': 'Bring Back Your Old Customers',

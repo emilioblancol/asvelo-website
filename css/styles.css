@@ -272,7 +272,7 @@ svg { display: block; }
 }
 .hero .eyebrow { color: #fff; }
 .hero .eyebrow .dot { background: #fff; box-shadow: 0 0 8px rgba(255,255,255,0.6); }
-.hero-title { font-size: clamp(48px, 6.5vw, 80px); font-weight: 700; letter-spacing: -0.04em; margin: 20px 0 24px; text-wrap: balance; color: #fff; }
+.hero-title { font-size: clamp(38px, 5.5vw, 68px); font-weight: 700; letter-spacing: -0.04em; margin: 20px 0 24px; text-wrap: balance; color: #fff; }
 .hero-sub { font-size: 18px; color: rgba(255,255,255,0.8); max-width: 460px; line-height: 1.7; margin: 0 auto 40px; }
 .hero-cta { display: flex; justify-content: center; }
 .hero-cta .btn-primary {
@@ -284,6 +284,13 @@ svg { display: block; }
   box-shadow: 0 16px 36px -8px rgba(0,0,0,0.4);
 }
 .hero-microcopy { font-size: 15px; color: rgba(255,255,255,0.75); margin: 12px 0 40px; }
+
+/* ==========================================================================
+   TRUST STRIP — compact proof/process line directly under the hero
+   ========================================================================== */
+.trust-strip { padding: 22px 24px; text-align: center; background: var(--surface); border-bottom: 1px solid var(--line); }
+.trust-strip-inner { max-width: 640px; margin: 0 auto; }
+.trust-strip-body { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.01em; color: var(--muted); margin: 0; }
 
 .signature-line { width: 100%; max-width: 360px; margin: 0 auto; }
 .signature-line svg { width: 100%; height: auto; overflow: visible; }
@@ -496,21 +503,24 @@ svg { display: block; }
    RESPONSIVE
    ========================================================================== */
 @media (max-width: 960px) {
-  :root { --nav-h: 88px; }
+  :root { --nav-h: 140px; }
   .container { padding: 0 28px; }
   .section-pad { padding: 80px 0; }
 
+  /* Each row's membership is fixed regardless of language: logo alone, then
+     links+toggle, then CTA alone. Nothing changes row when EN/ES text widths
+     differ, so the header never visibly reshuffles on a language switch. */
   .nav-inner { flex-wrap: wrap; height: auto; padding: 14px 0; row-gap: 12px; }
   .nav-logo { flex: 0 0 100%; margin-right: 0; }
   .nav-links { order: 1; margin-right: auto; }
   .lang-toggle { order: 2; }
-  .nav-cta { order: 3; margin-left: 12px; }
+  .nav-cta { order: 3; flex: 0 0 100%; margin-left: 0; }
 
   .hero { margin-top: var(--nav-h); margin-right: 12px; margin-bottom: 12px; margin-left: 12px; padding: 64px 20px; }
 }
 
 @media (max-width: 560px) {
-  :root { --nav-h: 84px; }
+  :root { --nav-h: 132px; }
   .container { padding: 0 20px; }
   .nav-inner { gap: 12px 16px; }
   .nav-links a { font-size: 11px; }
