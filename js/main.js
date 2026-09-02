@@ -8,6 +8,26 @@
     });
   });
 
+  /* ---------- Keep --nav-h synced with the fixed header's real height ----------
+     The nav wraps differently on mobile depending on translated text length
+     (e.g. the EN CTA is longer than the ES one), so its height isn't constant.
+     Content below it (.hero margin-top, anchor scroll-margin-top) reads --nav-h
+     instead of a hardcoded guess, corrected here whenever it can change. */
+  var navEl = document.getElementById('nav');
+  if (navEl) {
+    var syncNavHeight = function () {
+      document.documentElement.style.setProperty('--nav-h', navEl.offsetHeight + 'px');
+    };
+    document.addEventListener('DOMContentLoaded', syncNavHeight);
+    document.addEventListener('asvelo:langchange', syncNavHeight);
+    window.addEventListener('load', syncNavHeight);
+    var navResizeTimer;
+    window.addEventListener('resize', function () {
+      clearTimeout(navResizeTimer);
+      navResizeTimer = setTimeout(syncNavHeight, 100);
+    });
+  }
+
   /* ---------- Scroll reveal ---------- */
   var revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
