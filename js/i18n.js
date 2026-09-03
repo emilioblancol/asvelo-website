@@ -5,7 +5,6 @@
 
   var dict = {
     es: {
-      'nav.features': 'Qué incluye', 'nav.cta': 'Ver si mi base califica',
       'menu.toggle': 'Abrir menú', 'menu.home': 'Inicio', 'menu.features': 'Qué incluye', 'menu.pricing': 'Precios',
 
       'hero.eyebrow': 'Reactivación de base de datos gratis',
@@ -259,7 +258,6 @@
     },
 
     en: {
-      'nav.features': "What’s Included", 'nav.cta': 'See If My Database Qualifies',
       'menu.toggle': 'Open menu', 'menu.home': 'Home', 'menu.features': "What’s Included", 'menu.pricing': 'Pricing',
 
       'hero.eyebrow': 'Free database reactivation',
