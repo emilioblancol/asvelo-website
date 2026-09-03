@@ -105,6 +105,9 @@ svg { display: block; }
 .h-lg { font-size: clamp(32px, 4vw, 48px); letter-spacing: -0.03em; margin: 16px 0 20px; }
 .h-lg.center { text-align: center; }
 
+.h-sm { font-size: clamp(22px, 2.6vw, 28px); letter-spacing: -0.02em; margin: 12px 0 10px; }
+.h-sm.center { text-align: center; }
+
 /* Eyebrow */
 .eyebrow {
   display: inline-flex;
@@ -520,22 +523,37 @@ svg { display: block; }
    and .trust-list for checkmark lists, so this page stays visually native
    instead of introducing a parallel component set.
    ========================================================================== */
-.pricing-hero { padding: 160px 24px 56px; text-align: center; }
-.pricing-hero-inner { max-width: 640px; margin: 0 auto; }
-.pricing-hero .h-lg { margin: 16px 0 20px; }
-.pricing-anchor { font-family: var(--font-mono); font-size: 13px; color: var(--cobalt); margin: 20px 0 0; }
-.pricing-hero-reassurance { font-size: 12.5px; color: var(--muted); margin-top: 12px; }
+.pricing-hero { padding: 140px 24px 32px; text-align: center; }
+.pricing-hero-inner { max-width: 600px; margin: 0 auto; }
+.pricing-hero .h-lg { margin: 12px 0 10px; font-size: clamp(26px, 3.4vw, 38px); }
+.pricing-hero .muted-lead { font-size: 14.5px; line-height: 1.55; }
+.pricing-anchor { font-family: var(--font-mono); font-size: 12.5px; color: var(--cobalt); margin: 14px 0 0; }
+.pricing-hero-reassurance { font-size: 11.5px; color: var(--muted); margin-top: 8px; }
 
-.pricing-philosophy { padding: 0 24px 80px; max-width: 900px; margin: 0 auto; text-align: center; }
-.pricing-philosophy .h-lg { margin: 16px 0 12px; }
-.pricing-philosophy-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin: 40px 0; text-align: left; }
-.pricing-philosophy-item { padding: 24px; border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--surface); }
-.pricing-philosophy-item h3 { font-size: 15.5px; margin-bottom: 8px; }
-.pricing-philosophy-item p { font-size: 13.5px; color: var(--muted); line-height: 1.6; }
-.pricing-philosophy-highlight { font-family: var(--font-display); font-weight: 600; font-size: 17px; color: var(--ink); max-width: 480px; margin: 0 auto; }
+.pricing-table { padding: 0 24px 40px; max-width: 1000px; margin: 0 auto; }
+.pricing-table-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.pt-tier { position: relative; padding: 18px 16px; border: 1px solid var(--line-2); border-radius: var(--radius-md); background: var(--paper); }
+.pt-tier.is-common { border-color: var(--cobalt); box-shadow: 0 0 0 1px var(--cobalt); }
+.pt-badge {
+  position: absolute; top: -9px; left: 16px;
+  font-family: var(--font-mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.06em;
+  color: #fff; background: var(--cobalt); padding: 3px 8px; border-radius: 10px;
+}
+.pt-tier h3 { font-family: var(--font-display); font-weight: 600; font-size: 14.5px; margin: 0 0 4px; }
+.pt-price { font-family: var(--font-display); font-size: 22px; font-weight: 700; letter-spacing: -0.01em; line-height: 1.1; }
+.pt-price span:last-child { font-size: 11.5px; font-weight: 400; color: var(--muted); margin-left: 2px; }
+.pt-for { font-size: 11.5px; color: var(--muted); margin: 2px 0 10px; }
+.pt-tier ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 5px; }
+.pt-tier li { font-size: 12px; color: var(--ink); line-height: 1.4; padding-left: 15px; position: relative; }
+.pt-tier li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--cobalt); font-weight: 600; font-size: 10.5px; }
+.pt-note { text-align: center; font-size: 11.5px; color: var(--muted); margin-top: 14px; }
 
-.pricing-estimator { padding: 0 24px 96px; }
-.pricing-estimator-inner { max-width: 640px; margin: 0 auto; }
+.pricing-philosophy { padding: 0 24px 32px; max-width: 600px; margin: 0 auto; text-align: center; }
+.pricing-philosophy .h-sm { margin: 0 0 8px; }
+.pricing-philosophy-body { font-size: 13px; color: var(--muted); line-height: 1.55; }
+
+.pricing-estimator { padding: 0 24px 56px; }
+.pricing-estimator-inner { max-width: 600px; margin: 0 auto; }
 
 .est-opt { text-align: left; }
 .est-opt.is-multi::before {
@@ -548,46 +566,43 @@ svg { display: block; }
   border-radius: 4px;
 }
 .est-opt.is-multi.is-selected::before { background: var(--cobalt); border-color: var(--cobalt); }
-.est-allnote { font-size: 12.5px; color: var(--cobalt); margin-top: 4px; }
+.est-allnote { font-size: 11.5px; color: var(--cobalt); margin-top: 4px; }
 
 .est-controls { display: flex; gap: 12px; margin-top: 8px; }
 .est-controls .btn { flex: 1; }
 .btn[disabled] { opacity: 0.4; cursor: not-allowed; pointer-events: none; }
 
 .est-result { text-align: center; }
-.est-result-tier { font-family: var(--font-display); font-size: clamp(28px, 4vw, 36px); font-weight: 700; letter-spacing: -0.02em; margin: 8px 0 4px; }
-.est-result-price { font-family: var(--font-display); font-size: 20px; color: var(--cobalt); margin-bottom: 4px; }
-.est-result-badge { font-size: 12.5px; color: var(--muted); margin-bottom: 20px; }
-.est-result-desc { font-size: 15px; color: var(--muted); line-height: 1.7; max-width: 480px; margin: 0 auto 28px; }
+.est-result-tier { font-family: var(--font-display); font-size: clamp(20px, 2.8vw, 26px); font-weight: 700; letter-spacing: -0.01em; margin: 4px 0 2px; }
+.est-result-price { font-family: var(--font-display); font-size: 16px; color: var(--cobalt); margin-bottom: 2px; }
+.est-result-badge { font-size: 11.5px; color: var(--muted); margin-bottom: 14px; }
+.est-result-desc { font-size: 13px; color: var(--muted); line-height: 1.55; max-width: 440px; margin: 0 auto 18px; }
 
-.est-why { text-align: left; background: var(--surface); border-radius: var(--radius-md); padding: 24px 28px; margin: 0 0 20px; }
-.est-why h3 { font-size: 14px; margin-bottom: 12px; }
+.est-why { text-align: left; background: var(--surface); border-radius: var(--radius-md); padding: 14px 16px; margin: 0 0 14px; }
+.est-why h3 { font-size: 12px; margin-bottom: 8px; }
+.est-why .trust-list li { font-size: 12.5px; }
 
 .est-trust {
-  font-size: 14px;
+  font-size: 12.5px;
   color: var(--ink);
   background: #fff;
   border: 1px solid var(--line-2);
   border-left: 3px solid var(--cobalt);
   border-radius: var(--radius-sm);
-  padding: 16px 18px;
-  line-height: 1.6;
+  padding: 12px 14px;
+  line-height: 1.5;
   text-align: left;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
-.est-disclaimer { font-size: 12.5px; color: var(--muted); line-height: 1.6; text-align: left; margin-bottom: 28px; }
-.est-result-cta { display: flex; flex-direction: column; align-items: center; gap: 12px; }
-.est-recalc { font-size: 13px; color: var(--muted); text-decoration: underline; text-underline-offset: 2px; background: none; border: none; padding: 0; }
+.est-disclaimer { font-size: 11px; color: var(--muted); line-height: 1.5; text-align: left; margin-bottom: 18px; }
+.est-result-cta { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.est-recalc { font-size: 12px; color: var(--muted); text-decoration: underline; text-underline-offset: 2px; background: none; border: none; padding: 0; }
 .est-recalc:hover { color: var(--cobalt); }
 
-.pricing-included { padding: 0 24px 96px; max-width: 900px; margin: 0 auto; text-align: center; }
-.pricing-included .h-lg { margin: 16px 0 12px; }
-.pricing-included-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; text-align: left; }
-.pricing-included-grid h3 { font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 16px; }
-
-.pricing-cta { text-align: center; padding: 64px 24px 96px; border-top: 1px solid var(--line); }
-.pricing-cta .h-lg { margin: 0 0 12px; }
-.pricing-cta-reassurance { font-size: 12.5px; color: var(--muted); margin-top: 12px; }
+.pricing-cta { text-align: center; padding: 40px 24px 56px; border-top: 1px solid var(--line); }
+.pricing-cta .h-sm { margin: 0 0 8px; }
+.pricing-cta-body { font-size: 13px; color: var(--muted); line-height: 1.55; max-width: 480px; margin: 0 auto; }
+.pricing-cta-reassurance { font-size: 11.5px; color: var(--muted); margin-top: 10px; }
 
 /* ==========================================================================
    FOOTER
@@ -638,9 +653,8 @@ svg { display: block; }
 
   .hero { margin-top: var(--nav-h); margin-right: 12px; margin-bottom: 12px; margin-left: 12px; padding: 64px 20px; }
 
-  .pricing-hero { padding: calc(var(--nav-h) + 24px) 20px 24px; }
-  .pricing-philosophy-grid { grid-template-columns: 1fr; }
-  .pricing-included-grid { grid-template-columns: 1fr; gap: 32px; }
+  .pricing-hero { padding: calc(var(--nav-h) + 20px) 20px 20px; }
+  .pricing-table-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 560px) {

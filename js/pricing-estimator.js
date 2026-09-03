@@ -71,7 +71,7 @@
   function priceFor(result) {
     if (result.tier === 'starter') return t('est.result.price.starter');
     if (result.tier === 'growth') return t('est.result.price.growth');
-    return result.locations === 'many' ? t('est.result.price.premium.open') : t('est.result.price.premium.range');
+    return t('est.result.price.premium');
   }
 
   function bulletKeys(answers, result) {
@@ -217,6 +217,12 @@
       badge.className = 'est-result-badge';
       badge.textContent = t('est.result.growthBadge');
       wrap.appendChild(badge);
+    }
+    if (result.tier === 'premium' && result.locations === 'many') {
+      var scopeNote = document.createElement('p');
+      scopeNote.className = 'est-result-badge';
+      scopeNote.textContent = t('est.result.price.premium.note');
+      wrap.appendChild(scopeNote);
     }
 
     var desc = document.createElement('p');
