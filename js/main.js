@@ -28,6 +28,33 @@
     });
   }
 
+  /* ---------- Hamburger menu ---------- */
+  var menuToggle = document.getElementById('menuToggle');
+  var menuPanel = document.getElementById('menuPanel');
+  if (menuToggle && menuPanel) {
+    var closeMenu = function () {
+      menuPanel.hidden = true;
+      menuToggle.setAttribute('aria-expanded', 'false');
+    };
+    var openMenu = function () {
+      menuPanel.hidden = false;
+      menuToggle.setAttribute('aria-expanded', 'true');
+    };
+    menuToggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      if (menuPanel.hidden) openMenu(); else closeMenu();
+    });
+    menuPanel.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') closeMenu();
+    });
+    document.addEventListener('click', function (e) {
+      if (!menuPanel.hidden && !menuPanel.contains(e.target) && e.target !== menuToggle) closeMenu();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !menuPanel.hidden) closeMenu();
+    });
+  }
+
   /* ---------- Scroll reveal ---------- */
   var revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
