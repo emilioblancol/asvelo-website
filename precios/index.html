@@ -61,10 +61,14 @@
 
 <!-- ============ PRICING TABLE ============ -->
 <section class="pricing-table">
+  <div class="currency-toggle reveal" role="group" aria-label="Moneda / Currency">
+    <button type="button" class="currency-btn is-active" data-currency="mxn" aria-pressed="true">MXN</button>
+    <button type="button" class="currency-btn" data-currency="usd" aria-pressed="false">USD</button>
+  </div>
   <div class="pricing-table-grid">
     <div class="pt-tier reveal">
       <h3 data-i18n="pricing.tier1.name">Esencial</h3>
-      <div class="pt-price"><span data-i18n="pricing.tier1.price">$4,200 MXN</span><span data-i18n="pricing.perMonth">/mes</span></div>
+      <div class="pt-price"><span class="pt-price-value" data-mxn="$4,200 MXN" data-usd="$235 USD">$4,200 MXN</span><span data-i18n="pricing.perMonth">/mes</span></div>
       <p class="pt-for" data-i18n="pricing.tier1.for">Un solo local o agente</p>
       <ul>
         <li data-i18n="pricing.tier1.item1">Contesta llamadas perdidas al instante</li>
@@ -75,7 +79,7 @@
     <div class="pt-tier is-common reveal">
       <span class="pt-badge" data-i18n="pricing.table.mostCommon">Más común</span>
       <h3 data-i18n="pricing.tier2.name">Crecimiento</h3>
-      <div class="pt-price"><span data-i18n="pricing.tier2.price">$6,000 MXN</span><span data-i18n="pricing.perMonth">/mes</span></div>
+      <div class="pt-price"><span class="pt-price-value" data-mxn="$6,000 MXN" data-usd="$335 USD">$6,000 MXN</span><span data-i18n="pricing.perMonth">/mes</span></div>
       <p class="pt-for" data-i18n="pricing.tier2.for">Un local con más movimiento</p>
       <ul>
         <li data-i18n="pricing.tier2.item1">Todo lo de Esencial</li>
@@ -87,7 +91,7 @@
     </div>
     <div class="pt-tier reveal">
       <h3 data-i18n="pricing.tier3.name">Multisede</h3>
-      <div class="pt-price"><span data-i18n="pricing.tier3.price">$12,000 MXN</span><span data-i18n="pricing.perMonth">/mes</span></div>
+      <div class="pt-price"><span class="pt-price-value" data-mxn="$12,000 MXN" data-usd="$665 USD">$12,000 MXN</span><span data-i18n="pricing.perMonth">/mes</span></div>
       <p class="pt-for" data-i18n="pricing.tier3.for">Varias sucursales o agentes</p>
       <ul>
         <li data-i18n="pricing.tier3.item1">Todo lo de Crecimiento, por cada unidad</li>
@@ -97,6 +101,7 @@
     </div>
   </div>
   <p class="pt-note reveal" data-i18n="pricing.table.scopeNote">Para 4+ ubicaciones o alcance grande, cotización aparte.</p>
+  <p class="pt-note pt-currency-note" id="currencyNote" hidden data-i18n="pricing.currency.note">Conversión aproximada.</p>
 </section>
 
 <!-- ============ PRICING PHILOSOPHY ============ -->

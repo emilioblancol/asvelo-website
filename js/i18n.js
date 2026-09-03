@@ -26,16 +26,15 @@
 
       'pricing.table.mostCommon': 'Más común',
       'pricing.table.scopeNote': 'Para 4+ ubicaciones o alcance grande, cotización aparte.',
+      'pricing.currency.note': 'Conversión aproximada.',
 
       'pricing.tier1.name': 'Esencial',
-      'pricing.tier1.price': '$4,200 MXN',
       'pricing.tier1.for': 'Un solo local o agente',
       'pricing.tier1.item1': 'Contesta llamadas perdidas al instante',
       'pricing.tier1.item2': 'Confirma citas y recupera cancelaciones',
       'pricing.tier1.item3': 'Reactiva contactos dormidos',
 
       'pricing.tier2.name': 'Crecimiento',
-      'pricing.tier2.price': '$6,000 MXN',
       'pricing.tier2.for': 'Un local con más movimiento',
       'pricing.tier2.item1': 'Todo lo de Esencial',
       'pricing.tier2.item2': 'Sigue leads y cotizaciones en varios pasos',
@@ -44,7 +43,6 @@
       'pricing.tier2.item5': 'Reportes de qué se recuperó y cuánto',
 
       'pricing.tier3.name': 'Multisede',
-      'pricing.tier3.price': '$12,000 MXN',
       'pricing.tier3.for': 'Varias sucursales o agentes',
       'pricing.tier3.item1': 'Todo lo de Crecimiento, por cada unidad',
       'pricing.tier3.item2': 'Reportes consolidados entre sucursales',
@@ -107,7 +105,7 @@
       'est.result.trust': 'No pagas más por el tamaño de tu empresa. Este precio refleja el volumen y el trabajo continuo que administramos.',
       'est.result.disclaimer': 'Este es un estimado, no una cotización final. Antes de confirmar plan corremos una reactivación gratuita para ver si hay ingreso recuperable real.',
       'est.result.unsureNote': 'No pasa nada si no conoces el tamaño exacto de tu base. Lo revisamos en el diagnóstico.',
-      'est.result.cta': 'Comprobar mi ingreso recuperable',
+      'est.result.cta': 'Comprobar cuánto ingreso puedo recuperar',
       'est.result.recalc': 'Volver a calcular',
 
       'pricing.finalCta.title': 'Primero vemos si hay dinero que recuperar.',
@@ -132,6 +130,17 @@
       'feature7.body': 'En cuanto confirmamos que un cliente quedó satisfecho, le pedimos que te refiera — la forma más barata de conseguir un cliente nuevo.',
       'feature8.title': 'Ve el ingreso que se recupera',
       'feature8.body': 'Cada mes y trimestre ves las citas, el ingreso y el pipeline recuperado por cada parte del sistema — para que el retorno sea visible, no una promesa.',
+
+      'wa.title': '¿Y si ya tengo WhatsApp Business?',
+      'wa.body': 'WhatsApp Business te da un chat: tú decides cuándo escribir, a quién y qué. Asvelo corre por detrás. Detecta la llamada perdida, la cita que se acerca o el cliente que no ha vuelto, y dispara el mensaje sin que tengas que acordarte tú. Sigue siendo WhatsApp del otro lado. Solo que ya no depende de tu memoria.',
+      'wa.diagram.waLabel': 'Solo WhatsApp Business',
+      'wa.diagram.wa1': 'Tú recuerdas escribir',
+      'wa.diagram.wa2': 'Un chat, un mensaje a la vez',
+      'wa.diagram.wa3': 'Sin registro de qué faltó',
+      'wa.diagram.asveloLabel': 'Con el sistema',
+      'wa.diagram.asvelo1': 'El sistema dispara el mensaje',
+      'wa.diagram.asvelo2': 'Cada contacto sigue su propio flujo',
+      'wa.diagram.asvelo3': 'Reporte de qué se recuperó',
 
       'footer.trust': 'Tus datos se quedan en tu CRM · Sin contrato en la reactivación gratuita · Cancela cuando quieras',
       'footer.copy': '© 2026 Asvelo. Todos los derechos reservados.',
@@ -164,6 +173,8 @@
       'faq.a2': 'Al menos 300 contactos reales — clientes o leads, no listas compradas — con datos de contacto válidos y la capacidad de atender las citas o ventas que recuperemos.',
       'faq.q3': '¿Cuánto tarda en verse el resultado?',
       'faq.a3': 'La campaña corre de 10 a 14 días sobre un segmento de tu base — verás respuestas, conversaciones y citas agendadas durante ese periodo.',
+      'faq.q4': '¿Por qué no solo uso WhatsApp Business?',
+      'faq.a4': 'WhatsApp Business te da un chat: tú decides cuándo escribir. Asvelo detecta la llamada perdida, la cita próxima o el cliente dormido, y dispara el mensaje sin que tengas que acordarte. Sigue siendo WhatsApp del otro lado.',
 
       'diag.done.recapLabel': 'Con base en tus respuestas, esto es lo que podrías recuperar:',
 
@@ -281,16 +292,15 @@
 
       'pricing.table.mostCommon': 'Most common',
       'pricing.table.scopeNote': '4+ locations or a bigger scope get quoted separately.',
+      'pricing.currency.note': 'Approximate conversion.',
 
       'pricing.tier1.name': 'Essential',
-      'pricing.tier1.price': '$4,200 MXN',
       'pricing.tier1.for': 'One location or agent',
       'pricing.tier1.item1': 'Answers missed calls instantly',
       'pricing.tier1.item2': 'Confirms appointments, recovers cancellations',
       'pricing.tier1.item3': 'Reactivates dormant contacts',
 
       'pricing.tier2.name': 'Growth',
-      'pricing.tier2.price': '$6,000 MXN',
       'pricing.tier2.for': 'One location with more volume',
       'pricing.tier2.item1': 'Everything in Essential',
       'pricing.tier2.item2': 'Multi-step follow-up on leads and quotes',
@@ -299,7 +309,6 @@
       'pricing.tier2.item5': 'Reports on what got recovered',
 
       'pricing.tier3.name': 'Multi-location',
-      'pricing.tier3.price': '$12,000 MXN',
       'pricing.tier3.for': 'Several locations or agents',
       'pricing.tier3.item1': 'Everything in Growth, per unit',
       'pricing.tier3.item2': 'Consolidated cross-location reporting',
@@ -362,7 +371,7 @@
       'est.result.trust': "You're not paying more for your company's size. This price reflects the volume and ongoing work we manage.",
       'est.result.disclaimer': "This is an estimate, not a final quote. Before confirming a plan we run a free reactivation to see if there's real recoverable revenue.",
       'est.result.unsureNote': "It's fine if you don't know your exact database size. We'll check it during the diagnostic.",
-      'est.result.cta': 'Check my recoverable revenue',
+      'est.result.cta': 'See how much I could recover',
       'est.result.recalc': 'Recalculate',
 
       'pricing.finalCta.title': "First we check if there's money to recover.",
@@ -387,6 +396,17 @@
       'feature7.body': "Once we confirm a customer is satisfied, we ask for a referral — the cheapest way you’ll ever acquire a new customer.",
       'feature8.title': "See the Revenue You’re Recovering",
       'feature8.body': 'Every month and quarter, you see the appointments, revenue, and pipeline recovered by each part of the system — so the return is visible, not a promise.',
+
+      'wa.title': "What if I already have WhatsApp Business?",
+      'wa.body': "WhatsApp Business gives you a chat: you decide when to write, to whom, and what. Asvelo runs in the background. It catches the missed call, the upcoming appointment, or the customer who hasn't come back, and sends the message without you having to remember. It's still WhatsApp on the other end. It just doesn't depend on your memory anymore.",
+      'wa.diagram.waLabel': 'WhatsApp Business alone',
+      'wa.diagram.wa1': 'You remember to write',
+      'wa.diagram.wa2': 'One chat, one message at a time',
+      'wa.diagram.wa3': 'No record of what got missed',
+      'wa.diagram.asveloLabel': 'With the system',
+      'wa.diagram.asvelo1': 'The system sends the message',
+      'wa.diagram.asvelo2': 'Every contact follows its own flow',
+      'wa.diagram.asvelo3': 'A report on what got recovered',
 
       'footer.trust': 'Data stays in your CRM · No contract on the free reactivation · Cancel anytime',
       'footer.copy': '© 2026 Asvelo. All rights reserved.',
@@ -419,6 +439,8 @@
       'faq.a2': 'At least 300 real contacts — customers or leads, not purchased lists — with valid contact info and the capacity to handle the appointments or sales we recover.',
       'faq.q3': 'How long until I see results?',
       'faq.a3': "The campaign runs for 10 to 14 days against a segment of your database — you'll see replies, conversations, and booked appointments during that window.",
+      'faq.q4': "Why not just use WhatsApp Business?",
+      'faq.a4': "WhatsApp Business gives you a chat: you decide when to write. Asvelo catches the missed call, the upcoming appointment, or the dormant customer, and sends the message without you having to remember. It's still WhatsApp on the other end.",
 
       'diag.done.recapLabel': "Based on your answers, here's what you could recover:",
 

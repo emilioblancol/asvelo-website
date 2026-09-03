@@ -86,6 +86,32 @@
   }
 
   /* ==========================================================================
+     CURRENCY TOGGLE — swaps the static pricing table between MXN and USD.
+     Independent of the estimator below; guarded on its own so it works even
+     if this page's estimator markup ever changes.
+     ========================================================================== */
+  var currencyBtns = document.querySelectorAll('.currency-btn');
+  if (currencyBtns.length) {
+    var priceEls = document.querySelectorAll('.pt-price-value');
+    var currencyNote = document.getElementById('currencyNote');
+    var setCurrency = function (cur) {
+      priceEls.forEach(function (el) {
+        var val = el.getAttribute('data-' + cur);
+        if (val) el.textContent = val;
+      });
+      currencyBtns.forEach(function (btn) {
+        var active = btn.getAttribute('data-currency') === cur;
+        btn.classList.toggle('is-active', active);
+        btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
+      if (currencyNote) currencyNote.hidden = cur !== 'usd';
+    };
+    currencyBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () { setCurrency(btn.getAttribute('data-currency')); });
+    });
+  }
+
+  /* ==========================================================================
      RENDERING / STATE — reads QUESTIONS above, never hardcodes a question.
      ========================================================================== */
   var root = document.getElementById('estimator');
@@ -266,7 +292,7 @@
     ctaWrap.className = 'est-result-cta';
     var cta = document.createElement('a');
     cta.href = ctaHref;
-    cta.className = 'btn btn-primary btn-lg';
+    cta.className = 'btn btn-primary';
     cta.setAttribute('data-pricing-cta', 'estimator_result');
     cta.textContent = t('est.result.cta');
     ctaWrap.appendChild(cta);
