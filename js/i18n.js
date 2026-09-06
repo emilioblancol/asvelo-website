@@ -5,7 +5,13 @@
 
   var dict = {
     es: {
-      'menu.toggle': 'Abrir menú', 'menu.home': 'Inicio', 'menu.features': 'Qué incluye', 'menu.pricing': 'Precios',
+      'menu.toggle': 'Abrir menú', 'menu.home': 'Inicio', 'menu.features': 'Qué incluye', 'menu.pricing': 'Precios', 'menu.contact': 'Contacto',
+
+      'contact.title': 'Contáctanos',
+      'contact.sub': '¿Tienes dudas sobre el sistema o quieres saber si tu base califica? Escríbenos directamente o llena el formulario — te respondemos en menos de un día hábil.',
+      'contact.emailLabel': 'Correo directo:',
+      'contact.submit': 'Enviar mensaje',
+      'contact.formNote': 'Se abrirá tu programa de correo para enviar el mensaje a contact@asvelo.com.',
 
       'hero.eyebrow': 'Reactivación de base de datos gratis',
       'hero.title': 'Gana <span class="accent">más con cada cliente</span>,<br>sin gastar más en<br>conseguir nuevos.',
@@ -224,6 +230,7 @@
 
       'form.name': 'Nombre completo', 'form.business': 'Nombre del negocio', 'form.phone': 'Teléfono o correo',
       'form.privacy': 'Sin spam — solo tus resultados.',
+      'form.email': 'Correo electrónico', 'form.message': 'Mensaje',
 
       'diag.persona.no_list.title': 'Diagnóstico: aún no tienes una base que reactivar.',
       'diag.persona.no_list.body': 'Sin una lista de contactos no hay nada que recuperar todavía. El primer paso es instalar un sistema simple que capture y organice cada lead nuevo — para que en unos meses sí tengas una base lista para un piloto gratuito.',
@@ -271,7 +278,13 @@
     },
 
     en: {
-      'menu.toggle': 'Open menu', 'menu.home': 'Home', 'menu.features': "What’s Included", 'menu.pricing': 'Pricing',
+      'menu.toggle': 'Open menu', 'menu.home': 'Home', 'menu.features': "What’s Included", 'menu.pricing': 'Pricing', 'menu.contact': 'Contact',
+
+      'contact.title': 'Contact Us',
+      'contact.sub': "Questions about the system, or want to know if your database qualifies? Write to us directly or fill out the form — we'll reply within one business day.",
+      'contact.emailLabel': 'Direct email:',
+      'contact.submit': 'Send message',
+      'contact.formNote': 'This opens your email app to send the message to contact@asvelo.com.',
 
       'hero.eyebrow': 'Free database reactivation',
       'hero.title': 'Earn <span class="accent">more from every customer</span>,<br>without spending more<br>to get new ones.',
@@ -490,6 +503,7 @@
 
       'form.name': 'Full name', 'form.business': 'Business name', 'form.phone': 'Phone or email',
       'form.privacy': 'No spam — just your results.',
+      'form.email': 'Email address', 'form.message': 'Message',
 
       'diag.persona.no_list.title': "Diagnosis: you don't have a database to reactivate yet.",
       'diag.persona.no_list.body': "Without a contact list there's nothing to recover yet. The first step is a simple system that captures and organizes every new lead — so in a few months you'll have a base ready for a free pilot.",
