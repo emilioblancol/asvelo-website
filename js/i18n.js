@@ -5,7 +5,11 @@
 
   var dict = {
     es: {
-      'menu.toggle': 'Abrir menú', 'menu.home': 'Inicio', 'menu.features': 'Qué incluye', 'menu.pricing': 'Precios', 'menu.contact': 'Contacto',
+      'menu.toggle': 'Abrir menú', 'menu.home': 'Inicio', 'menu.features': 'Qué incluye', 'menu.pricing': 'Precios', 'menu.contact': 'Contacto', 'menu.sitemap': 'Mapa del sitio',
+
+      'sitemap.title': 'Mapa del sitio',
+      'sitemap.sub': 'Todas las páginas de Asvelo en un solo lugar.',
+      'sitemap.qualify': 'Ver si mi base califica',
 
       'contact.title': 'Contáctanos',
       'contact.sub': '¿Tienes dudas sobre el sistema o quieres saber si tu base califica? Escríbenos directamente o llena el formulario — te respondemos en menos de un día hábil.',
@@ -164,6 +168,18 @@
       'vsl.cta': 'Quiero saber si mi base califica',
       'vsl.microcopy': 'Toma menos de 2 minutos. No todas las bases de datos califican.',
 
+      'how.eyebrow': 'Cómo funciona',
+      'how.title': 'De diagnóstico a resultados, sin arriesgar nada',
+      'how.step1.title': 'Responde el diagnóstico',
+      'how.step1.body': 'Menos de 2 minutos, aquí mismo en la página. Sin costo ni compromiso.',
+      'how.step2.title': 'Validamos tu base',
+      'how.step2.body': 'Una llamada corta para confirmar volumen y calidad de tus contactos — sin compromiso de continuar.',
+      'how.step3.title': 'Lanzamos tu reactivación gratis',
+      'how.step3.body': 'Corremos la campaña sobre un segmento real de tu base durante 10–14 días. Sin costo, sin contrato.',
+      'how.step4.title': 'Ves los resultados y decides',
+      'how.step4.body': 'Te mostramos las citas y el ingreso recuperado. Tú decides si seguir — sin presión.',
+      'how.note': 'Sin costo inicial · Sin contrato · Tus datos se quedan en tu CRM',
+
       'trust.eyebrow': 'Antes de continuar',
       'trust.title': 'Esto es lo que necesitas para calificar',
       'trust.item1': '300+ contactos reales — clientes o leads, no listas compradas',
@@ -278,7 +294,11 @@
     },
 
     en: {
-      'menu.toggle': 'Open menu', 'menu.home': 'Home', 'menu.features': "What’s Included", 'menu.pricing': 'Pricing', 'menu.contact': 'Contact',
+      'menu.toggle': 'Open menu', 'menu.home': 'Home', 'menu.features': "What’s Included", 'menu.pricing': 'Pricing', 'menu.contact': 'Contact', 'menu.sitemap': 'Sitemap',
+
+      'sitemap.title': 'Sitemap',
+      'sitemap.sub': 'Every Asvelo page in one place.',
+      'sitemap.qualify': 'See if my database qualifies',
 
       'contact.title': 'Contact Us',
       'contact.sub': "Questions about the system, or want to know if your database qualifies? Write to us directly or fill out the form — we'll reply within one business day.",
@@ -436,6 +456,18 @@
       'vsl.videoPlaceholder': 'Video coming soon',
       'vsl.cta': 'Find out if my database qualifies',
       'vsl.microcopy': 'Takes less than 2 minutes. Not every database qualifies.',
+
+      'how.eyebrow': 'How it works',
+      'how.title': 'From diagnostic to results, without risking anything',
+      'how.step1.title': 'Take the diagnostic',
+      'how.step1.body': "Under 2 minutes, right here on the page. No cost, no commitment.",
+      'how.step2.title': 'We validate your database',
+      'how.step2.body': "A short call to confirm the volume and quality of your contacts — no commitment to continue.",
+      'how.step3.title': 'We launch your free reactivation',
+      'how.step3.body': 'We run the campaign on a real segment of your database for 10–14 days. No cost, no contract.',
+      'how.step4.title': 'You see the results and decide',
+      'how.step4.body': "We show you the appointments and revenue recovered. You decide whether to continue — no pressure.",
+      'how.note': 'No upfront cost · No contract · Your data stays in your CRM',
 
       'trust.eyebrow': 'Before you continue',
       'trust.title': "Here's what you need to qualify",
