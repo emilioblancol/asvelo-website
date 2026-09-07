@@ -5,11 +5,7 @@
 
   var dict = {
     es: {
-      'menu.toggle': 'Abrir menú', 'menu.home': 'Inicio', 'menu.features': 'Qué incluye', 'menu.pricing': 'Precios', 'menu.contact': 'Contacto', 'menu.sitemap': 'Mapa del sitio',
-
-      'sitemap.title': 'Mapa del sitio',
-      'sitemap.sub': 'Todas las páginas de Asvelo en un solo lugar.',
-      'sitemap.qualify': 'Ver si mi base califica',
+      'menu.toggle': 'Abrir menú', 'menu.home': 'Inicio', 'menu.features': 'Qué incluye', 'menu.pricing': 'Precios', 'menu.contact': 'Contacto', 'menu.howItWorks': 'Cómo funciona',
 
       'contact.title': 'Contáctanos',
       'contact.sub': '¿Tienes dudas sobre el sistema o quieres saber si tu base califica? Escríbenos directamente o llena el formulario — te respondemos en menos de un día hábil.',
@@ -170,6 +166,7 @@
 
       'how.eyebrow': 'Cómo funciona',
       'how.title': 'De diagnóstico a resultados, sin arriesgar nada',
+      'how.pageSub': 'Así es todo el proceso, de principio a fin — pensado para que sepas exactamente qué esperar antes de empezar.',
       'how.step1.title': 'Responde el diagnóstico',
       'how.step1.body': 'Menos de 2 minutos, aquí mismo en la página. Sin costo ni compromiso.',
       'how.step2.title': 'Validamos tu base',
@@ -294,11 +291,7 @@
     },
 
     en: {
-      'menu.toggle': 'Open menu', 'menu.home': 'Home', 'menu.features': "What’s Included", 'menu.pricing': 'Pricing', 'menu.contact': 'Contact', 'menu.sitemap': 'Sitemap',
-
-      'sitemap.title': 'Sitemap',
-      'sitemap.sub': 'Every Asvelo page in one place.',
-      'sitemap.qualify': 'See if my database qualifies',
+      'menu.toggle': 'Open menu', 'menu.home': 'Home', 'menu.features': "What’s Included", 'menu.pricing': 'Pricing', 'menu.contact': 'Contact', 'menu.howItWorks': 'How It Works',
 
       'contact.title': 'Contact Us',
       'contact.sub': "Questions about the system, or want to know if your database qualifies? Write to us directly or fill out the form — we'll reply within one business day.",
@@ -459,6 +452,7 @@
 
       'how.eyebrow': 'How it works',
       'how.title': 'From diagnostic to results, without risking anything',
+      'how.pageSub': "Here's the entire process, start to finish — so you know exactly what to expect before you begin.",
       'how.step1.title': 'Take the diagnostic',
       'how.step1.body': "Under 2 minutes, right here on the page. No cost, no commitment.",
       'how.step2.title': 'We validate your database',
