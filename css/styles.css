@@ -480,13 +480,14 @@ svg { display: block; }
 /* ==========================================================================
    QUALIFICATION RECAP + FAQ (reactivar.html)
    ========================================================================== */
-.trust-section, .faq-section { padding: 64px 24px; text-align: center; border-top: 1px solid var(--line); }
-.trust-list {
+.trust-section, .faq-section, .qualify-section { padding: 64px 24px; text-align: center; border-top: 1px solid var(--line); }
+.trust-list, .qualify-list {
   list-style: none; margin: 28px auto 32px; padding: 0; max-width: 560px;
   text-align: left; display: flex; flex-direction: column; gap: 14px;
 }
-.trust-list li { font-size: 15px; color: var(--ink); padding-left: 26px; position: relative; line-height: 1.6; }
+.trust-list li, .qualify-list li { font-size: 15px; color: var(--ink); padding-left: 26px; position: relative; line-height: 1.6; }
 .trust-list li::before { content: "✓"; position: absolute; left: 0; color: var(--cobalt); font-weight: 600; }
+.qualify-list li::before { content: "✕"; position: absolute; left: 0; color: var(--muted); font-weight: 600; }
 
 .faq-list { max-width: 640px; margin: 28px auto 32px; text-align: left; display: flex; flex-direction: column; gap: 24px; }
 .faq-list h3 { font-size: 17px; margin-bottom: 6px; }
