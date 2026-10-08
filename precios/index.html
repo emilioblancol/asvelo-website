@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Precios de Asvelo | Sistema de recuperación de ingresos</title>
-<meta name="description" content="Instalación única de MXN 20,000 para el sistema completo de Asvelo, más Kits de Campaña opcionales desde MXN 1,500. No es una suscripción.">
+<meta name="description" content="Empieza con una reactivación gratuita de tu base de datos. Calcula en un minuto si tu negocio califica y cuánto podrías recuperar.">
 <link rel="canonical" href="https://asvelo.com/precios/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,60 +51,33 @@
 <section class="pricing-hero">
   <div class="pricing-hero-inner">
     <div class="eyebrow center reveal"><span class="dot"></span><span data-i18n="pricing.eyebrow">Precios</span></div>
-    <h1 class="h-lg center reveal" data-i18n="pricing.hero.title">Pagas una vez por instalar el sistema. Después, tú decides qué más comprar.</h1>
-    <p class="muted-lead center reveal" data-i18n="pricing.hero.sub">No es una suscripción. Instalamos el sistema completo en tu CRM por una tarifa única de fundador; después, compras Kits de Campaña solo cuando los necesitas.</p>
-    <p class="pricing-anchor center reveal" data-i18n="pricing.hero.anchor">Instalación desde MXN 20,000, pago único.</p>
+    <h1 class="h-lg center reveal" data-i18n="pricing.hero.title">Primero recuperamos clientes de tu base. Gratis.</h1>
+    <p class="muted-lead center reveal" data-i18n="pricing.hero.sub">Corremos una reactivación gratuita sobre un segmento real de tu base. Con resultados en la mano, decides si instalar el sistema completo en tu CRM: pago único, sin mensualidad.</p>
+    <p class="pricing-anchor center reveal" data-i18n="pricing.hero.anchor">Gratis · 10 a 14 días · sin contrato</p>
     <div class="reveal" style="margin-top:16px">
       <a href="https://wa.me/522295314183?text=Hola%2C%20quiero%20saber%20si%20mi%20base%20califica%20para%20la%20reactivaci%C3%B3n%20gratuita." target="_blank" rel="noopener" class="btn btn-primary" data-i18n="pricing.hero.cta">Solicitar mi reactivación gratuita</a>
-      <p class="pricing-hero-reassurance" data-i18n="pricing.hero.reassurance">Empiezas con una reactivación gratuita — ves resultados reales antes de pagar la instalación.</p>
+      <p class="pricing-hero-reassurance" data-i18n="pricing.hero.reassurance">Para negocios con 300+ contactos. ¿No sabes si calificas? Calcúlalo abajo en un minuto.</p>
     </div>
   </div>
 </section>
 
-<!-- ============ PRICING TABLE ============ -->
-<section class="pricing-table">
-  <div class="currency-toggle reveal" role="group" aria-label="Moneda / Currency">
-    <button type="button" class="currency-btn is-active" data-currency="mxn" aria-pressed="true">MXN</button>
-    <button type="button" class="currency-btn" data-currency="usd" aria-pressed="false">USD</button>
+<!-- ============ QUALIFYING CALCULATOR ============ -->
+<section class="pricing-estimator" id="calc" data-cta-href="https://wa.me/522295314183?text=Hola%2C%20quiero%20saber%20si%20mi%20base%20califica%20para%20la%20reactivaci%C3%B3n%20gratuita.">
+  <div class="pricing-estimator-inner">
+    <div class="diag-intro">
+      <div class="eyebrow center reveal"><span class="dot"></span><span data-i18n="calc.eyebrow">Calculadora</span></div>
+      <h2 class="h-sm center reveal" data-i18n="calc.title">¿Tu base califica? Calcula cuánto podrías recuperar.</h2>
+      <p class="pricing-philosophy-body center reveal" data-i18n="calc.sub">Seis preguntas, menos de un minuto. Te decimos si tu negocio parece candidato y cuánto podría generar una campaña frente a la inversión.</p>
+    </div>
+    <div class="diag-progress-row reveal">
+      <button type="button" class="diag-back" id="calcBack" data-i18n-aria-label="aria.diagBack" aria-label="Pregunta anterior" hidden>
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 3 5 8l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="diag-progress-bar"><span id="calcProgressFill"></span></div>
+      <span class="diag-step-label" id="calcStepLabel"></span>
+    </div>
+    <div class="diag-card reveal" id="calcCard" aria-live="polite"></div>
   </div>
-  <div class="pricing-table-grid">
-    <div class="pt-tier reveal">
-      <h3 data-i18n="pricing.offer1.name">Reactivación gratuita</h3>
-      <div class="pt-price"><span data-i18n="pricing.offer1.price">Gratis</span></div>
-      <p class="pt-for" data-i18n="pricing.offer1.for">Antes de pagar nada</p>
-      <ul>
-        <li data-i18n="pricing.offer1.item1">Recuperamos oportunidades de un segmento real de tu base</li>
-        <li data-i18n="pricing.offer1.item2">Corre de 10 a 14 días, sin contrato</li>
-        <li data-i18n="pricing.offer1.item3">Ves resultados reales antes de decidir</li>
-      </ul>
-    </div>
-    <div class="pt-tier is-common reveal">
-      <span class="pt-badge" data-i18n="pricing.table.badge">El sistema completo</span>
-      <h3 data-i18n="pricing.offer2.name">Instalación del sistema</h3>
-      <div class="pt-price"><span class="pt-price-value" data-mxn="$20,000 MXN" data-usd="$1,140 USD">$20,000 MXN</span></div>
-      <p class="pt-for" data-i18n="pricing.offer2.for">Pago único — tarifa de fundador</p>
-      <ul>
-        <li data-i18n="pricing.offer2.item1">Segmentación y mapeo de tu ciclo de cliente</li>
-        <li data-i18n="pricing.offer2.item2">Respuesta a llamadas perdidas, leads y cotizaciones abiertas</li>
-        <li data-i18n="pricing.offer2.item3">Confirmaciones, recordatorios y recuperación de citas y no-shows</li>
-        <li data-i18n="pricing.offer2.item4">Reactivación de contactos dormidos y recordatorios de recompra</li>
-        <li data-i18n="pricing.offer2.item5">Primera campaña completa de reactivación, capacitación y entrega</li>
-        <li data-i18n="pricing.offer2.item6">30 días de correcciones técnicas incluidos</li>
-      </ul>
-    </div>
-    <div class="pt-tier reveal">
-      <h3 data-i18n="pricing.offer3.name">Kit de Campaña</h3>
-      <div class="pt-price"><span class="pt-price-value" data-mxn="$1,500 MXN" data-usd="$85 USD">$1,500 MXN</span></div>
-      <p class="pt-for" data-i18n="pricing.offer3.for">Por kit, cuando quieras</p>
-      <ul>
-        <li data-i18n="pricing.offer3.item1">Segmento, oferta y dos variaciones de mensaje listas para lanzar</li>
-        <li data-i18n="pricing.offer3.item2">Tú la ejecutas dentro del sistema ya instalado</li>
-        <li data-i18n="pricing.offer3.item3">Personalizada (~$3,000–4,000) o gestionada por nosotros (~$6,000–10,000)</li>
-      </ul>
-    </div>
-  </div>
-  <p class="pt-note reveal" data-i18n="pricing.table.scopeNote">Campañas personalizadas (~MXN 3,000–4,000) y totalmente gestionadas (~MXN 6,000–10,000) se cotizan aparte.</p>
-  <p class="pt-note pt-currency-note" id="currencyNote" hidden data-i18n="pricing.currency.note">Conversión aproximada.</p>
 </section>
 
 <!-- ============ PRICING PHILOSOPHY ============ -->
