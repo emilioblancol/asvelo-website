@@ -95,7 +95,7 @@
       'pricing.finalCta.cta': 'Solicitar reactivación gratuita',
       'pricing.finalCta.reassurance': 'Sin compromiso — pagas la instalación solo si decides continuar.',
 
-      'features.eyebrow': 'El sistema', 'features.imagePlaceholder': 'Captura de pantalla próximamente',
+      'features.eyebrow': 'El sistema',
       'features.intro': 'Primero recuperamos lo que ya perdiste. Luego instalamos el sistema que evita que lo sigas perdiendo.',
       'feature1.title': 'Trae de vuelta a tus clientes',
       'feature1.body': 'Le escribimos a tus clientes de hace 3, 6 o 12 meses en el momento justo de su ciclo de recompra — para que vuelvan sin que tengas que acordarte tú de contactarlos.',
@@ -381,7 +381,7 @@
       'pricing.finalCta.cta': 'Request my free reactivation',
       'pricing.finalCta.reassurance': "No commitment — you only pay for the install if you decide to continue.",
 
-      'features.eyebrow': 'The system', 'features.imagePlaceholder': 'Screenshot coming soon',
+      'features.eyebrow': 'The system',
       'features.intro': 'First, we recover what you already lost. Then, we install the system that stops you from losing it again.',
       'feature1.title': 'Bring Back Your Old Customers',
       'feature1.body': "We message your customers from 3, 6, or 12 months ago at the exact right point in their repurchase cycle — so they come back without you having to remember to reach out.",

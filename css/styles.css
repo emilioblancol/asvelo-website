@@ -378,12 +378,55 @@ svg { display: block; }
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--muted);
-  font-family: var(--font-mono);
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
 }
+/* Pending screenshots: an animated icon per headline until the real
+   screenshot lands; replace the .feature-icon with the image when it does.
+   Base styles are each icon's finished frame, so reduced motion shows a
+   complete, still icon. */
+.feature-icon {
+  width: clamp(140px, 24vw, 220px);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  color: var(--cobalt);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 24%;
+  box-shadow: 0 28px 60px -26px var(--cobalt-glow);
+}
+.feature-icon svg { width: 56%; height: 56%; overflow: visible; }
+.feature-icon .fi-d2 { animation-delay: 0.18s; }
+.feature-icon .fi-d3 { animation-delay: 0.36s; }
+
+.fi-spin { transform-box: view-box; transform-origin: 12px 12px; animation: fi-spin 3.2s cubic-bezier(0.65, 0, 0.35, 1) infinite; }
+.fi-pulse { transform-box: fill-box; transform-origin: center; animation: fi-pulse 2s ease-in-out infinite; }
+.fi-ring { opacity: 0; transform-box: fill-box; transform-origin: center; animation: fi-ring 2s ease-out infinite; }
+.fi-shake { transform-box: fill-box; transform-origin: center; animation: fi-shake 2.4s ease-in-out infinite; }
+.fi-wave { animation: fi-wave 2.4s ease-in-out infinite; }
+.fi-draw { stroke-dasharray: 10; animation: fi-draw 2.4s ease-in-out infinite; }
+.fi-dot { transform-box: fill-box; animation: fi-dot 1.2s ease-in-out infinite; }
+.fi-star { fill: currentColor; animation: fi-star 2.4s ease-in-out infinite both; }
+.fi-join { animation: fi-join 3s ease-in-out infinite; }
+.fi-bar { transform-box: fill-box; transform-origin: 50% 100%; animation: fi-bar 2.6s cubic-bezier(0.2, 0.8, 0.2, 1) infinite both; }
+
+@keyframes fi-spin { to { transform: rotate(360deg); } }
+@keyframes fi-pulse { 50% { transform: scale(1.12); } }
+@keyframes fi-ring { from { opacity: 0.6; transform: scale(1); } to { opacity: 0; transform: scale(2.1); } }
+@keyframes fi-shake {
+  0%, 40%, 100% { transform: rotate(0); }
+  5%, 15%, 25% { transform: rotate(-12deg); }
+  10%, 20%, 30% { transform: rotate(12deg); }
+}
+@keyframes fi-wave { 0%, 100% { opacity: 0.15; } 20%, 50% { opacity: 1; } }
+@keyframes fi-draw { 0%, 15% { stroke-dashoffset: 10; } 50%, 100% { stroke-dashoffset: 0; } }
+@keyframes fi-dot { 0%, 60%, 100% { transform: translateY(0); } 30% { transform: translateY(-2px); } }
+@keyframes fi-star { 0%, 10% { fill-opacity: 0; } 30%, 100% { fill-opacity: 1; } }
+@keyframes fi-join {
+  0%, 10% { opacity: 0; transform: translateX(3px); }
+  35%, 85% { opacity: 1; transform: translateX(0); }
+  100% { opacity: 0; }
+}
+@keyframes fi-bar { 0% { transform: scaleY(0); } 35%, 100% { transform: scaleY(1); } }
 
 /* ==========================================================================
    WHATSAPP COMPARISON (index.html — right after FEATURES)
