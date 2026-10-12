@@ -429,6 +429,74 @@ svg { display: block; }
 @keyframes fi-bar { 0% { transform: scaleY(0); } 35%, 100% { transform: scaleY(1); } }
 
 /* ==========================================================================
+   ICON BADGE — shared small-icon treatment (differentiators, mechanism)
+   ========================================================================== */
+.icon-badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  flex: none;
+  width: 44px; height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--paper);
+  box-shadow: 0 0 0 1px var(--line-2);
+  color: var(--cobalt);
+}
+.icon-badge svg { width: 21px; height: 21px; }
+
+/* ==========================================================================
+   MECHANISM — Ciclo de Reactivación Compuesta, 4-step learning cycle (index.html)
+   ========================================================================== */
+.mechanism { padding: 96px 24px; text-align: center; background: var(--surface); }
+.mechanism-inner { max-width: 920px; margin: 0 auto; }
+.mechanism .muted-lead { margin: 0 auto; }
+.mechanism-steps {
+  list-style: none; margin: 48px 0 0; padding: 0;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;
+}
+.mechanism-step { position: relative; display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 0 10px; }
+.mechanism-step .icon-badge { width: 52px; height: 52px; }
+.mechanism-step .icon-badge svg { width: 24px; height: 24px; }
+.mechanism-step-num { font-family: var(--font-mono); font-size: 11px; color: var(--muted); letter-spacing: 0.08em; }
+.mechanism-step h3 { font-size: 15px; margin: 0; }
+.mechanism-step p { font-size: 12.5px; color: var(--muted); line-height: 1.5; margin: 0; }
+.mechanism-arrow {
+  position: absolute; top: 26px; right: -18px; width: 20px; color: var(--line-2);
+}
+.mechanism-step:last-child .mechanism-arrow { display: none; }
+.mechanism-note {
+  margin-top: 40px; font-size: 13px; color: var(--ink); background: var(--paper);
+  border: 1px solid var(--line-2); border-left: 3px solid var(--cobalt);
+  border-radius: var(--radius-sm); padding: 14px 18px; max-width: 620px; margin-left: auto; margin-right: auto;
+  text-align: left; line-height: 1.6;
+}
+@media (max-width: 760px) {
+  .mechanism-steps { grid-template-columns: 1fr 1fr; gap: 32px 8px; }
+  .mechanism-arrow { display: none; }
+}
+@media (max-width: 480px) {
+  .mechanism-steps { grid-template-columns: 1fr; }
+}
+
+/* ==========================================================================
+   DIFFERENTIATORS (index.html — after the trust strip): free result first,
+   client-owned system, learning cycle — each against the usual alternative.
+   ========================================================================== */
+.diff { padding: 96px 24px; }
+.diff-inner { max-width: 1040px; margin: 0 auto; }
+.diff-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 48px; }
+.diff-card {
+  display: flex; flex-direction: column; gap: 12px;
+  padding: 28px 24px; text-align: left;
+  background: var(--paper); border: 1px solid var(--line-2); border-radius: var(--radius-lg);
+}
+.diff-card h3 { font-family: var(--font-display); font-size: 18px; font-weight: 600; letter-spacing: -0.01em; margin: 6px 0 0; }
+.diff-card p { font-size: 14px; color: var(--muted); line-height: 1.55; margin: 0; }
+.diff-card .diff-usual { margin-top: auto; padding-top: 14px; border-top: 1px solid var(--line); font-size: 12.5px; }
+@media (max-width: 860px) {
+  .diff { padding: 72px 24px; }
+  .diff-grid { grid-template-columns: 1fr; }
+}
+
+/* ==========================================================================
    WHATSAPP COMPARISON (index.html — right after FEATURES)
    ========================================================================== */
 .wa-compare { padding: 0 24px 64px; }
