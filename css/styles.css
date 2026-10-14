@@ -315,7 +315,7 @@ svg { display: block; }
 }
 .hero .eyebrow { color: #fff; }
 .hero .eyebrow .dot { background: #fff; box-shadow: 0 0 8px rgba(255,255,255,0.6); }
-.hero-title { font-size: clamp(38px, 5.5vw, 68px); font-weight: 700; letter-spacing: -0.04em; margin: 20px 0 24px; text-wrap: balance; color: #fff; }
+.hero-title { font-size: clamp(34px, 4.6vw, 56px); font-weight: 700; letter-spacing: -0.04em; margin: 20px 0 24px; text-wrap: balance; color: #fff; }
 .hero-sub { font-size: 18px; color: rgba(255,255,255,0.8); max-width: 460px; line-height: 1.7; margin: 0 auto 40px; }
 .hero-cta { display: flex; justify-content: center; }
 .hero-cta .btn-primary {

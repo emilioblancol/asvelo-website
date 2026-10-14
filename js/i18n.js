@@ -14,7 +14,7 @@
       'contact.formNote': 'Se abrirá tu programa de correo para enviar el mensaje a contact@asvelo.com.',
 
       'hero.eyebrow': 'Reactivación de base de datos gratis',
-      'hero.title': 'Gana <span class="accent">más con cada cliente</span>,<br>sin gastar más en<br>conseguir nuevos.',
+      'hero.title': 'Tienes más clientes de los que crees.<br><span class="accent">Te los traemos de vuelta en 7 días. Gratis.</span>',
       'hero.sub': 'Asvelo opera los seguimientos para convertir más leads, traer clientes de vuelta y generar reseñas y referidos.',
       'hero.cta.primary': 'Ver si mi base califica',
       'hero.microcopy': 'Reactivación gratuita para negocios con 300+ contactos.',
@@ -324,7 +324,7 @@
       'contact.formNote': 'This opens your email app to send the message to contact@asvelo.com.',
 
       'hero.eyebrow': 'Free database reactivation',
-      'hero.title': 'Earn <span class="accent">more from every customer</span>,<br>without spending more<br>to get new ones.',
+      'hero.title': 'You have more customers than you think.<br><span class="accent">We’ll bring them back in 7 days. Free.</span>',
       'hero.sub': 'Asvelo runs the follow-ups that convert more leads, bring back customers, and generate reviews and referrals.',
       'hero.cta.primary': 'See If My Database Qualifies',
       'hero.microcopy': 'Free reactivation for businesses with 300+ contacts.',
