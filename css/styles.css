@@ -315,7 +315,9 @@ svg { display: block; }
 }
 .hero .eyebrow { color: #fff; }
 .hero .eyebrow .dot { background: #fff; box-shadow: 0 0 8px rgba(255,255,255,0.6); }
-.hero-title { font-size: clamp(34px, 4.6vw, 56px); font-weight: 700; letter-spacing: -0.04em; margin: 20px 0 24px; text-wrap: balance; color: #fff; }
+.hero-title { font-size: clamp(36px, 5vw, 64px); font-weight: 700; letter-spacing: -0.04em; line-height: 1.04; margin: 20px 0 24px; text-wrap: balance; color: #fff; }
+/* Lets the two-sentence headline run wider than the hero copy so it holds four lines. */
+@media (min-width: 1040px) { .hero-title { margin-left: -80px; margin-right: -80px; } }
 .hero-sub { font-size: 18px; color: rgba(255,255,255,0.8); max-width: 460px; line-height: 1.7; margin: 0 auto 40px; }
 .hero-cta { display: flex; justify-content: center; }
 .hero-cta .btn-primary {
@@ -878,6 +880,7 @@ svg { display: block; }
   .nav-inner { gap: 10px 16px; }
   .hero { margin-top: var(--nav-h); margin-right: 8px; margin-bottom: 8px; margin-left: 8px; border-radius: var(--radius-lg); }
   .hero-cta .btn { width: 100%; }
+  .hero-title { font-size: clamp(40px, 11.8vw, 50px); line-height: 1; margin-left: -20px; margin-right: -20px; }
   .footer-bar { flex-direction: column; align-items: flex-start; }
   .legal-toc { grid-template-columns: 1fr; }
 }

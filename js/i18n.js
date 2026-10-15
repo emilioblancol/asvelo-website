@@ -14,7 +14,7 @@
       'contact.formNote': 'Se abrirá tu programa de correo para enviar el mensaje a contact@asvelo.com.',
 
       'hero.eyebrow': 'Reactivación de base de datos gratis',
-      'hero.title': 'Tienes más clientes de los que crees.<br><span class="accent">Te los traemos de vuelta en 7 días. Gratis.</span>',
+      'hero.title': 'Tienes más clientes de los que crees.<br><span class="accent">Te los traemos de vuelta en&nbsp;7&nbsp;días. Gratis.</span>',
       'hero.sub': 'Asvelo opera los seguimientos para convertir más leads, traer clientes de vuelta y generar reseñas y referidos.',
       'hero.cta.primary': 'Ver si mi base califica',
       'hero.microcopy': 'Reactivación gratuita para negocios con 300+ contactos.',
@@ -49,7 +49,7 @@
 
       'pricing.hero.title': 'Primero recuperamos clientes de tu base. Gratis.',
       'pricing.hero.sub': 'Corremos una reactivación gratuita sobre un segmento real de tu base. Con resultados en la mano, decides si instalar el sistema completo en tu CRM: pago único, sin mensualidad.',
-      'pricing.hero.anchor': 'Gratis · 10 a 14 días · sin contrato',
+      'pricing.hero.anchor': 'Gratis · 7 días · sin contrato',
       'pricing.hero.cta': 'Solicitar mi reactivación gratuita',
       'pricing.hero.reassurance': 'Para negocios con 300+ contactos. ¿No sabes si calificas? Calcúlalo abajo en un minuto.',
 
@@ -78,7 +78,7 @@
       'calc.ticket': '¿Cuál es tu ticket promedio, o el valor de un cliente recurrente?',
       'calc.ticket.lt1000': 'Menos de MXN 1,000', 'calc.ticket.1000': 'MXN 1,000 – 2,000', 'calc.ticket.2000': 'MXN 2,000 – 5,000',
       'calc.ticket.5000': 'MXN 5,000 – 10,000', 'calc.ticket.10000': 'MXN 10,000 – 25,000', 'calc.ticket.25000': 'Más de MXN 25,000',
-      'calc.capacity': 'Si recuperamos 10–15 citas o ventas en dos semanas, ¿puedes atenderlas?',
+      'calc.capacity': 'Si recuperamos 10–15 citas o ventas en 7 días, ¿puedes atenderlas?',
       'calc.capacity.yes': 'Sí, sin problema', 'calc.capacity.adjust': 'Sí, con algunos ajustes', 'calc.capacity.no': 'No, estamos saturados ahora mismo',
       'calc.response': '¿Alguien puede responder a un contacto interesado en menos de 10 minutos?',
       'calc.response.always': 'Sí, siempre', 'calc.response.sometimes': 'A veces', 'calc.response.no': 'No, tardamos más',
@@ -173,7 +173,7 @@
       'how.step2.title': 'Validamos tu base',
       'how.step2.body': 'Una llamada corta para confirmar volumen y calidad de tus contactos — sin compromiso de continuar.',
       'how.step3.title': 'Lanzamos tu reactivación gratis',
-      'how.step3.body': 'Corremos la campaña sobre un segmento real de tu base durante 10–14 días. Sin costo, sin contrato.',
+      'how.step3.body': 'Corremos la campaña sobre un segmento real de tu base durante 7 días. Sin costo, sin contrato.',
       'how.step4.title': 'Ves los resultados y decides',
       'how.step4.body': 'Te mostramos las citas y el ingreso recuperado. Tú decides si seguir — sin presión.',
       'how.step5.title': 'Instalamos el sistema completo',
@@ -215,7 +215,7 @@
       'faq.q2': '¿Qué necesito para calificar?',
       'faq.a2': 'Al menos 300 contactos reales — clientes o leads, no listas compradas — con datos de contacto válidos y la capacidad de atender las citas o ventas que recuperemos.',
       'faq.q3': '¿Cuánto tarda en verse el resultado?',
-      'faq.a3': 'La campaña corre de 10 a 14 días sobre un segmento de tu base — verás respuestas, conversaciones y citas agendadas durante ese periodo.',
+      'faq.a3': 'La campaña corre 7 días sobre un segmento de tu base — verás respuestas, conversaciones y citas agendadas durante ese periodo.',
       'faq.q4': '¿Por qué no solo uso WhatsApp Business?',
       'faq.a4': 'WhatsApp Business te da un chat: tú decides cuándo escribir. Asvelo detecta la llamada perdida, la cita próxima o el cliente dormido, y dispara el mensaje sin que tengas que acordarte. Sigue siendo WhatsApp del otro lado.',
 
@@ -257,7 +257,7 @@
       'diag.reveal.nocrm.headline': 'Sin una lista de contactos, todavía no hay nada que reactivar.',
       'diag.reveal.nocrm.note': 'El piloto gratuito reactiva contactos que ya tienes. Si aún no tienes una base organizada, podemos ayudarte a armar una primero — sigue y te contactamos con esa opción.',
 
-      'diag.q4': 'Si recuperamos 10–15 citas o ventas en las próximas dos semanas, ¿tienes capacidad para atenderlas?',
+      'diag.q4': 'Si recuperamos 10–15 citas o ventas en los próximos 7 días, ¿tienes capacidad para atenderlas?',
       'diag.q4.opt1': 'Sí, sin problema', 'diag.q4.opt2': 'Sí, con algunos ajustes', 'diag.q4.opt3': 'No, estamos saturados ahora mismo',
 
       'diag.q5': '¿Alguien puede responder a un contacto interesado en menos de 10 minutos?',
@@ -302,7 +302,7 @@
       'diag.persona.low_ticket.cta': 'Revisar la economía de mi negocio',
 
       'diag.persona.capacity_conditional.title': 'Diagnóstico: probablemente tengas capacidad, hay que confirmarla.',
-      'diag.persona.capacity_conditional.body': 'Antes de lanzar, confirmamos exactamente cuántas citas o ventas adicionales puedes atender en las próximas dos semanas — para que el piloto no te rebase.',
+      'diag.persona.capacity_conditional.body': 'Antes de lanzar, confirmamos exactamente cuántas citas o ventas adicionales puedes atender en los próximos 7 días — para que el piloto no te rebase.',
       'diag.persona.capacity_conditional.cta': 'Confirmar mi capacidad',
 
       'diag.persona.response_conditional.title': 'Diagnóstico: tu tiempo de respuesta es inconsistente.',
@@ -324,7 +324,7 @@
       'contact.formNote': 'This opens your email app to send the message to contact@asvelo.com.',
 
       'hero.eyebrow': 'Free database reactivation',
-      'hero.title': 'You have more customers than you think.<br><span class="accent">We’ll bring them back in 7 days. Free.</span>',
+      'hero.title': 'You have more customers than you think.<br><span class="accent">We’ll bring them back in&nbsp;7&nbsp;days. Free.</span>',
       'hero.sub': 'Asvelo runs the follow-ups that convert more leads, bring back customers, and generate reviews and referrals.',
       'hero.cta.primary': 'See If My Database Qualifies',
       'hero.microcopy': 'Free reactivation for businesses with 300+ contacts.',
@@ -359,7 +359,7 @@
 
       'pricing.hero.title': 'First, we recover customers from your database. For free.',
       'pricing.hero.sub': 'We run a free reactivation on a real segment of your database. With results in hand, you decide whether to install the full system in your CRM: one-time payment, no monthly fee.',
-      'pricing.hero.anchor': 'Free · 10–14 days · no contract',
+      'pricing.hero.anchor': 'Free · 7 days · no contract',
       'pricing.hero.cta': 'Request my free reactivation',
       'pricing.hero.reassurance': 'For businesses with 300+ contacts. Not sure you qualify? Check below in a minute.',
 
@@ -388,7 +388,7 @@
       'calc.ticket': "What's your average ticket, or the value of a repeat customer?",
       'calc.ticket.lt1000': 'Under MXN 1,000', 'calc.ticket.1000': 'MXN 1,000 – 2,000', 'calc.ticket.2000': 'MXN 2,000 – 5,000',
       'calc.ticket.5000': 'MXN 5,000 – 10,000', 'calc.ticket.10000': 'MXN 10,000 – 25,000', 'calc.ticket.25000': 'More than MXN 25,000',
-      'calc.capacity': 'If we recover 10–15 appointments or sales in two weeks, can you handle them?',
+      'calc.capacity': 'If we recover 10–15 appointments or sales in 7 days, can you handle them?',
       'calc.capacity.yes': 'Yes, no problem', 'calc.capacity.adjust': 'Yes, with some adjustments', 'calc.capacity.no': "No, we're at capacity right now",
       'calc.response': 'Can someone reply to an interested contact within 10 minutes?',
       'calc.response.always': 'Yes, always', 'calc.response.sometimes': 'Sometimes', 'calc.response.no': 'No, it takes us longer',
@@ -483,7 +483,7 @@
       'how.step2.title': 'We validate your database',
       'how.step2.body': "A short call to confirm the volume and quality of your contacts — no commitment to continue.",
       'how.step3.title': 'We launch your free reactivation',
-      'how.step3.body': 'We run the campaign on a real segment of your database for 10–14 days. No cost, no contract.',
+      'how.step3.body': 'We run the campaign on a real segment of your database for 7 days. No cost, no contract.',
       'how.step4.title': 'You see the results and decide',
       'how.step4.body': "We show you the appointments and revenue recovered. You decide whether to continue — no pressure.",
       'how.step5.title': 'We install the complete system',
@@ -525,7 +525,7 @@
       'faq.q2': 'What do I need to qualify?',
       'faq.a2': 'At least 300 real contacts — customers or leads, not purchased lists — with valid contact info and the capacity to handle the appointments or sales we recover.',
       'faq.q3': 'How long until I see results?',
-      'faq.a3': "The campaign runs for 10 to 14 days against a segment of your database — you'll see replies, conversations, and booked appointments during that window.",
+      'faq.a3': "The campaign runs for 7 days against a segment of your database — you'll see replies, conversations, and booked appointments during that window.",
       'faq.q4': "Why not just use WhatsApp Business?",
       'faq.a4': "WhatsApp Business gives you a chat: you decide when to write. Asvelo catches the missed call, the upcoming appointment, or the dormant customer, and sends the message without you having to remember. It's still WhatsApp on the other end.",
 
@@ -567,7 +567,7 @@
       'diag.reveal.nocrm.headline': "Without a contact list, there's nothing to reactivate yet.",
       'diag.reveal.nocrm.note': "The free pilot reactivates contacts you already have. If you don't have an organized list yet, we can help you build one first — keep going and we'll follow up with that option.",
 
-      'diag.q4': 'If we recover 10–15 appointments or sales in the next two weeks, do you have capacity to handle them?',
+      'diag.q4': 'If we recover 10–15 appointments or sales in the next 7 days, do you have capacity to handle them?',
       'diag.q4.opt1': 'Yes, no problem', 'diag.q4.opt2': 'Yes, with some adjustments', 'diag.q4.opt3': "No, we're at capacity right now",
 
       'diag.q5': 'Can someone respond to an interested contact within 10 minutes?',
@@ -612,7 +612,7 @@
       'diag.persona.low_ticket.cta': 'Review my business economics',
 
       'diag.persona.capacity_conditional.title': "Diagnosis: you likely have capacity — let's confirm it.",
-      'diag.persona.capacity_conditional.body': "Before launching, we confirm exactly how many extra appointments or sales you can handle in the next two weeks — so the pilot doesn't overwhelm you.",
+      'diag.persona.capacity_conditional.body': "Before launching, we confirm exactly how many extra appointments or sales you can handle in the next 7 days — so the pilot doesn't overwhelm you.",
       'diag.persona.capacity_conditional.cta': 'Confirm my capacity',
 
       'diag.persona.response_conditional.title': 'Diagnosis: your response time is inconsistent.',
