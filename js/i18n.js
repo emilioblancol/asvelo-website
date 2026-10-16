@@ -15,7 +15,7 @@
 
       'hero.eyebrow': 'Reactivación de base de datos gratis',
       'hero.title': 'Tienes más clientes de los que crees.<br><span class="accent">Te los traemos de vuelta en&nbsp;7&nbsp;días. Gratis.</span>',
-      'hero.sub': 'Asvelo opera los seguimientos para convertir más leads, traer clientes de vuelta y generar reseñas y referidos.',
+      'hero.sub': 'Asvelo opera los seguimientos para cerrar más ventas, traer clientes de vuelta y generar reseñas y referidos.',
       'hero.cta.primary': 'Ver si mi base califica',
       'hero.microcopy': 'Reactivación gratuita para negocios con 300+ contactos.',
 
